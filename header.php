@@ -1,9 +1,9 @@
 <?php
 /**
- * Silver Quantum ( header.php )
+ * Initiator ( header.php )
  *
- * @package     Silver Quantum
- * @copyright   Copyright (C) 2014-2020. Benjamin Lu
+ * @package     Initiator
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
@@ -18,12 +18,12 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
 <div id="container" class="site-container">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ) ?></a>
-	<header id="header" class="site-header header-image">
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'initiator' ) ?></a>
+	<header id="header" class="site-header">
 		<div class="site-branding">
 			<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
 			<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
 		</div>
+		<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
 	</header>

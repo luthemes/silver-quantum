@@ -1,9 +1,9 @@
 <?php
 /**
- * Silver Quantum ( functions-setup.php )
+ * Initiator ( functions-setup.php )
  *
- * @package     Silver Quantum
- * @copyright   Copyright (C) 2014-2020. Benjamin Lu
+ * @package     Initiator
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
@@ -11,7 +11,7 @@
 /**
  * Define namespace
  */
-namespace SilverQuantum;
+namespace Initiator;
 
 /**
  * Setup Theme Support.
@@ -66,19 +66,19 @@ add_action( 'after_setup_theme', function() {
 		add_theme_support( 'post-thumbnails' );
 
 		/**
-		 * By add_image_size( 'silver-quantum-small-thumbnails', 324, 324, true );. This should be used for content in the home for blogs.
+		 * By add_image_size( 'initiator-small-thumbnails', 324, 324, true );. This should be used for content in the home for blogs.
 		 */
-		add_image_size( 'silver-quantum-small-thumbnails', 324, 324, true );
+		add_image_size( 'initiator-small-thumbnails', 324, 324, true );
 
 		/**
-		 * By add_image_size( 'silver-quantum-medium-thumbnails', 810, 396, true );. This should be used for content that has sidebars.
+		 * By add_image_size( 'initiator-medium-thumbnails', 810, 396, true );. This should be used for content that has sidebars.
 		 */
-		add_image_size( 'silver-quantum-medium-thumbnails', 810, 396, true );
+		add_image_size( 'initiator-medium-thumbnails', 810, 396, true );
 
 		/**
-		 * By add_image_size( 'silver-quantum-large-thumbnails', 1170, 614, true );. This should be used for content that has no sidebars.
+		 * By add_image_size( 'initiator-large-thumbnails', 1170, 614, true );. This should be used for content that has no sidebars.
 		 */
-		add_image_size( 'silver-quantum-large-thumbnails', 1170, 614, true );
+		add_image_size( 'initiator-large-thumbnails', 1170, 614, true );
 
 		/**
 		 * By add_theme_support( 'wp-block-styles' );. This should enable block styles on the frontend.
@@ -89,7 +89,7 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
 		 */
 		add_theme_support( 'editor-styles' );
-		add_editor_style( 'public/css/editor.css' );
+		add_editor_style( 'assets/css/editor-styles.css' );
 
 		/**
 		 * By adding add_theme_support( 'align-wide' );. This will enable alignwide and alignfull.
@@ -99,7 +99,7 @@ add_action( 'after_setup_theme', function() {
 		/**
 		 * Load theme translation.
 		 */
-		load_theme_textdomain( 'silver-quantum' );
+		load_theme_textdomain( 'initiator', get_parent_theme_file_path( '/languages ' ) );
 	}
 );
 
@@ -107,33 +107,35 @@ add_action( 'after_setup_theme', function() {
  * Add support for custom header.
  */
 add_action( 'after_setup_theme', function() {
-	add_theme_support( 'custom-header',
-		[
-			'default-text-color' => 'ffffff',
-			'default-image'      => get_theme_file_uri( '/public/images/header-image.jpg' ),
-			'height'             => 1200,
-			'max-width'          => 2000,
-			'width'              => 2000,
-			'flex-height'        => false,
-			'flex-width'         => false,
-		]
-	);
 
-	register_default_headers(
-		array(
-			'header-image' => array(
-				'url'           => '%s/public/images/header-image.jpg',
-				'thumbnail_url' => '%s/public/images/header-image.jpg',
-				'description'   => esc_html__( 'Header Image', 'silver-quantum' ),
-			),
-		)
-	);
+		add_theme_support( 'custom-header',
+			[
+				'default-text-color' => 'ffffff',
+				'default-image'      => get_theme_file_uri( '/assets/images/header-image.jpg' ),
+				'height'             => 1200,
+				'max-width'          => 2000,
+				'width'              => 2000,
+				'flex-height'        => false,
+				'flex-width'         => false,
+			]
+		);
+
+		register_default_headers(
+			array(
+				'header-image' => array(
+					'url'           => '%s/assets/images/header-image.jpg',
+					'thumbnail_url' => '%s/assets/images/header-image.jpg',
+					'description'   => esc_html__( 'Header Image', 'initiator' ),
+				),
+			)
+		);
 } );
 
 /**
  * Add Support Custom Background
  */
 add_action( 'after_setup_theme', function() {
+
 	add_theme_support( 'custom-background', [
 		'default-image'          => '',
 		'default-preset'         => 'default',
@@ -144,4 +146,5 @@ add_action( 'after_setup_theme', function() {
 		'default-attachment'     => 'scroll',
 		'default-color'          => '',
 	] );
+
 } );

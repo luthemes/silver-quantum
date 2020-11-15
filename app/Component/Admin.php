@@ -1,14 +1,14 @@
-<?php
+<?php // phpcs:ignore
 /**
- * Silver Quantum ( Admin.php )
+ * Backdrop Core ( Admin.php )
  *
- * @package     Silver Quantum
- * @copyright   Copyright (C) 2014-2020. Benjamin Lu
+ * @package     Backdrop Core
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
 
-namespace SilverQuantum\Component;
+namespace Initiator\Component;
 
 use Benlumia007\Backdrop\Contracts\Admin\Admin as AdminPage;
 
@@ -39,13 +39,13 @@ class Admin extends AdminPage {
 	 * Render Menu
 	 */
 	public function callback() {
-		echo '<h1 class="admin-title">' . $this->theme_info->name . '</h1>'; // phpcs:ignore
+		echo '<h1 class="admin-title">' . $this->theme_info->name . '</h1>';
 		$this->pages();
 	}
 
 	public function tabs( $current = 'introduction' ) {
 		$tabs = array(
-			'introduction' => esc_html__( 'Introduction', 'silver-quantum' ),
+			'introduction' => esc_html__( 'Introduction', 'backdrop-core' ),
 		);
 
 		$admin_nonce = wp_create_nonce( 'admin_nonce' );
@@ -53,7 +53,7 @@ class Admin extends AdminPage {
 		echo '<h2 class="tabs">';
 			foreach ( $tabs as $tab => $name ) {
 				$class = ( $tab === $current ) ? ' nav-tab-active' : '';
-				echo "<a class='nav-tab $class' href='?page=theme-page&tab=$tab&_wp_nonce=$admin_nonce'>$name</a>"; // phpcs:ignore
+				echo "<a class='nav-tab $class' href='?page=theme-page&tab=$tab&_wp_nonce=$admin_nonce'>$name</a>"; // XSS OK.
 			}
 		echo '</h2>';
 	}
@@ -61,16 +61,16 @@ class Admin extends AdminPage {
 	public function pages() {
 		global $pagenow;
 
-		if ( isset( $_GET['tab'] ) && isset( $_GET['_wp_nonce'] ) && false !== wp_verify_nonce( $_GET['_wp_nonce'], 'admin_nonce' ) ) {// phpcs:ignore
-			$this->tabs( esc_html( wp_unslash( $_GET['tab'] ) ) ); // phpcs:ignore
+		if ( isset( $_GET['tab'] ) && isset( $_GET['_wp_nonce'] ) && false !== wp_verify_nonce( $_GET['_wp_nonce'], 'admin_nonce' ) ) {// WPCS: input var ok.
+			$this->tabs( esc_html( wp_unslash( $_GET['tab'] ) ) ); // WPCS: input var ok, sanitization ok.
 		} else {
 			$this->tabs( 'introduction' );
 		}
 		echo '<div class="tabs-content">';
 
-		if ( 'themes.php' === $pagenow && 'theme-page' === sanitize_text_field( wp_unslash( $_GET['page'] ) ) ) { // phpcs:ignore
-			if ( isset( $_GET['tab'] ) && isset( $_GET['_wp_nonce'] ) && false !== wp_verify_nonce( $_GET['_wp_nonce'], 'admin_nonce' ) ) { // phpcs:ignore
-				$this->tab = esc_html( wp_unslash( $_GET['tab'] ) ); // phpcs:ignore
+		if ( 'themes.php' === $pagenow && 'theme-page' === sanitize_text_field( wp_unslash( $_GET['page'] ) ) ) { // WPCS: input var ok.
+			if ( isset( $_GET['tab'] ) && isset( $_GET['_wp_nonce'] ) && false !== wp_verify_nonce( $_GET['_wp_nonce'], 'admin_nonce' ) ) { // WPCS: input var ok, sanitization ok.
+				$this->tab = esc_html( wp_unslash( $_GET['tab'] ) ); // WPCS: input var ok, sanitization ok.
 			} else {
 				$this->tab = 'introduction';
 			}
@@ -85,17 +85,17 @@ class Admin extends AdminPage {
 	}
 
 	public function introduction() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'silver-quantum' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'backdrop-core' ); ?></h2>
 		<ul>
-			<li><?php echo esc_html( __('Theme Name: ', 'silver-quantum' ) . $this->theme_info->name ); ?></li>
-			<li><?php echo esc_html( __('Theme Version: ', 'silver-quantum' ) . $this->theme_info->version ); ?></li>
+			<li><?php echo esc_html( __('Theme Name: ', 'backdrop-core' ) . $this->theme_info->name ); ?></li>
+			<li><?php echo esc_html( __('Theme Version: ', 'backdrop-core' ) . $this->theme_info->version ); ?></li>
 		</ul>
-		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'silver-quantum' ); ?></h2>
-		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'silver-quantum' ); ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'silver-quantum' ); ?></h2>
+		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'backdrop-core' ); ?></h2>
+		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'backdrop-core' ); ?>
+		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'backdrop-core' ); ?></h2>
 		<ul>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'silver-quantum' ); ?></a></li>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'silver-quantum' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'backdrop-core' ); ?></a></li>
+			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'backdrop-core' ); ?></a></li>
 		</ul>
 	<?php }
 

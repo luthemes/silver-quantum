@@ -1,9 +1,9 @@
 <?php
 /**
- * Silver Quantum ( 404.php )
+ * Initiator ( 404.php )
  *
- * @package     Silver Quantum
- * @copyright   Copyright (C) 2014-2020. Benjamin Lu
+ * @package     Initiator
+ * @copyright   Copyright (C) 2019. Benjamin Lu
  * @license     GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author      Benjamin Lu ( https://benjlu.com )
  */
@@ -11,7 +11,7 @@
 
 <?php get_header(); ?>
 	<section id="content" class="site-content">
-		<div id="global-layout" class="no-sidebar">
+		<div id="global-layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
 				<?php Benlumia007\Backdrop\Template\get_template_part( 'content/content', '404' ); ?>
 			</main>
