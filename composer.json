@@ -1,11 +1,11 @@
 {
-    "name": "benlumia007/initiator",
+    "name": "benlumia007/silver-quantum",
     "description": "Initiator is a starter theme designed to help theme authors using Backdrop Core Framework.",
     "keywords": [
         "wordpress",
         "wordpress-theme"
     ],
-    "homepage": "https://github.com/benlumia007/initiator",
+    "homepage": "https://github.com/benlumia007/silver-quantum",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Initiator\\": "app/"
+            "SilverQuantum\\": "app/"
 		},
 		"files":[
 			"app/framework.php",
