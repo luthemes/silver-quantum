@@ -44,6 +44,7 @@ let files = [
 let folders = [
 	'app',
 	'public',
+	'templates',
 	'vendor'
 ];
 

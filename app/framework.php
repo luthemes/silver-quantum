@@ -33,6 +33,10 @@ $silver_quantum->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
 		'secondary' => [
 			'name' => esc_html__( 'Secondary Sidebar', 'silver-quantum' ),
 			'desc' => esc_html__( 'Pages', 'silver-quantum' ),
+		],
+		'custom' => [
+			'name' => esc_html__( 'Custom Sidebar', 'silver-quantum' ),
+			'desc' => esc_html__( 'Custom Sidebar', 'silver-quantum' ),
 		]
 	]
 );
