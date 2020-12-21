@@ -16,3 +16,29 @@
 //
 // 1.0 - Content
 //
+.content-area {
+    line-height: 1.8em;
+
+    .post {
+        margin-bottom: 3em;
+
+        .entry-header {
+            text-align: center;
+    
+            .entry-title {
+                margin: 0;
+                padding: 0;
+
+                a {
+                    border-bottom: none;
+                    color: #111111;
+
+                    &:hover,
+                    &:focus {
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}
