@@ -15,7 +15,7 @@
 ?>
 <?php get_header(); ?>
 	<section id="content" class="site-content">
-		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'no-sidebar' ) ); ?>">
+		<div id="layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left=-sidebar' ) ); ?>">
 			<main id="main" class="content-area">
 				<?php
 					if ( have_posts() ) :
