@@ -92,11 +92,6 @@ add_action( 'after_setup_theme', function() {
 		add_editor_style( 'assets/css/editor-styles.css' );
 
 		/**
-		 * By adding add_theme_support( 'align-wide' );. This will enable alignwide and alignfull.
-		 */
-		add_theme_support( 'align-wide' );
-
-		/**
 		 * Load theme translation.
 		 */
 		load_theme_textdomain( 'silver-quantum', get_parent_theme_file_path( '/languages ' ) );
