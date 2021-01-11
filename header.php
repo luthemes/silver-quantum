@@ -3,7 +3,7 @@
  * Silver Quantum ( header.php )
  *
  * @package   Silver Quantum
- * @copyright Copyright (C) 2014-2020. Benjamin Lu
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
  * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
  * @author    Benjamin Lu ( https://benjlu.com )
  */
@@ -19,9 +19,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ) ?></a>
-<div id="header" class="main-navigation">
-	<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
-</div>
+<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
 <div id="container" class="site-container">
 	<header id="site-header" class="site-header header-image">
 		<div class="site-branding">
