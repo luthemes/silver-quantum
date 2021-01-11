@@ -75,7 +75,8 @@ mix.version();
  *
  * @link https://laravel.com/docs/5.6/mix#working-with-scripts
  */
-mix.js( `${devPath}/js/app.js`, 'js' );
+mix.js( `${devPath}/js/app.js`, 'js' )
+   .js( `${devPath}/js/control-image-radio.js`, 'js' );
 
 /*
  * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions
@@ -88,4 +89,5 @@ mix.js( `${devPath}/js/app.js`, 'js' );
 
 // Compile SASS/CSS.
 mix.sass( `${devPath}/scss/screen.scss`, 'css', )
+   .sass( `${devPath}/scss/control-image-radio.scss`, 'css', )
    .sass( `${devPath}/scss/editor.scss`, 'css' );

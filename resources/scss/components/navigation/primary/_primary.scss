@@ -157,21 +157,18 @@
 	font-weight: 900;
 }
 
+
 @media screen and (min-width: 1025px) {
     .main-navigation {
         background: #666666;
-        border-bottom: 0.06em solid #ffffff;
-    }
-
-    .primary-navigation {
-        margin: 0.3em;
-    }
+		border-bottom: 0.063em solid #ffffff;
+		padding: 0.3em;
+	}
     
     .primary-navigation .primary-menu {
-        display: flex;
-        justify-content: center;
-        position: static;
-        
+		display: flex;
+		justify-content: center;
+		position: static;
     }
     
     .primary-navigation .nav-menu li {
@@ -189,25 +186,10 @@
         color: #ffffff;
     }
     
-    .primary-navigation .nav-menu a {
-        padding: 0.75em 0.75em;
-    }
-
-    .primary-navigation .nav-menu ul {
-        background: #444444;
-    }
-
-    .primary-navigation .nav-menu ul a {
-        margin-bottom: 0.2em;
-        padding: 0.75em 0.75em;
-    }
-
-    .primary-navigation .nav-menu ul ul {
-        background: #444444;
-
-        a {
-            padding: 0.75em 0.75em;
-        }
+    .primary-navigation .nav-menu a,
+    .primary-navigation .nav-menu ul a,
+    .primary-navigation .nav-menu ul ul a {
+        padding: 0.75em;
     }
     
     /* Hide Dropdowns by Default
@@ -216,7 +198,7 @@
         position: absolute; 
         /* has to be the same number as the "line-height" of "nav a" */
         top: 100%;
-        left: -9999em;
+		left: -9999em;
         /*! border: 1px solid #606060; */
     }
         
@@ -224,13 +206,15 @@
     .primary-navigation .nav-menu li:hover > ul,
     .primary-navigation .nav-menu li:focus > ul,
     .primary-navigation .nav-menu li.focus > ul {
-        left: 0;
+		left: 0;
+		margin-left: 0.063em;
     }
         
     /* First Tier Dropdown */
     .primary-navigation .nav-menu ul li {
         position: relative;
-        width: 20em;
+		width: 20em;
+		margin-bottom: 0.063em;
     }
     
     /* Second, Third and more Tiers	
@@ -242,13 +226,15 @@
     .primary-navigation .nav-menu li li.focus > ul {
         position: absolute;
         top: 0;
-        left: 101%; 
+		left: 100.1%;
     }
 
     /* Background color change on Hover */
     .primary-navigation .nav-menu a:hover,
     .primary-navigation .nav-menu a:focus { 
-        background-color: transparent;
+		background: transparent;
+		border-bottom: none;
+		color: #ffffff;
     }
     
     .primary-navigation .nav-menu ul a,
@@ -260,14 +246,19 @@
     .primary-navigation .nav-menu ul a:focus { 
         background-color: #333333;
         color: #ffffff;
-    }
+	}
+	
+	.primary-navigation .nav-menu ul ul a {
+		background: #444444;
+		margin-right: 0.063em;
+	}
     
     .menu-item-has-children > a:after,
     .page_item_has_children > a:after {
         font-family: 'Font Awesome 5 Free';
         content: "\f078";
         vertical-align: bottom;
-        margin: 0.4em;
+        margin-left: 0.25em;
     }
     
     .menu-item-has-children .menu-item-has-children > a:after,
@@ -280,7 +271,6 @@
         right: 0.5em;
         top: 50%;
         transform: translate(0, -50%);
-        margin: 0;
     }  
     
     .dropdown-toggle {

@@ -11,12 +11,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php Benlumia007\Backdrop\Entry\display_title(); ?>
+		<div class="entry-metadata">
+			<?php Benlumia007\Backdrop\Entry\display_author(); ?>
+			<?php Benlumia007\Backdrop\Entry\display_date(); ?>
+			<?php Benlumia007\Backdrop\Entry\display_comments_link(); ?>
+		</div>
 	</header>
-	<div class="entry-metadata">
-		<?php Benlumia007\Backdrop\Entry\display_author(); ?>
-		<?php Benlumia007\Backdrop\Entry\display_date(); ?>
-		<?php Benlumia007\Backdrop\Entry\display_comments_link(); ?>
-	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
