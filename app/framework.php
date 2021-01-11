@@ -42,4 +42,4 @@ $silver_quantum->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
 );
 
 $silver_quantum->admin = new SilverQuantum\Component\Admin();
-$silver_quantum->customize = new SilverQuantum\Component\Customize();
+$silver_quantum->customize = new SilverQuantum\Component\ThemeLayouts();
