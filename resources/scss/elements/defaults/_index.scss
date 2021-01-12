@@ -7,6 +7,8 @@
 // @author    Benjamin Lu ( https://benjlu.com )
 //
 
-@import 'settings/index';
-@import 'utilities/index';
-@import 'elements/index';
+body {
+	font-family: font-family( 'primary' );
+	font-size: $text-base;
+	margin: 0;
+}

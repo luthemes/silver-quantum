@@ -34,7 +34,7 @@ class ThemeLayouts extends CustomizeAbstract {
 	 */
 	public function register_panels( $manager ) {
         $manager->add_panel( 'theme_options', array(
-			'title' => esc_html( 'Theme Options', 'camaraderie' ),
+			'title' => esc_html( 'Theme Options', 'silver-quantum' ),
 			'priority' => 15,
 		) );
     }
@@ -48,7 +48,7 @@ class ThemeLayouts extends CustomizeAbstract {
 	 */
 	public function register_sections( $manager ) {
 		$manager->add_section( 'global_layout', array(
-			'title'    => esc_html__( 'Global Layout', 'camaraderie' ),
+			'title'    => esc_html__( 'Global Layout', 'silver-quantum' ),
 			'panel'    => 'theme_options',
 			'priority' => 25,
 		) );
@@ -83,7 +83,7 @@ class ThemeLayouts extends CustomizeAbstract {
 				$manager,
 				'global_layout',
 				[
-					'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'camaraderie' ),
+					'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'silver-quantum' ),
 					'section'     => 'global_layout',
 					'settings'    => 'global_layout',
 					'type'        => 'radio-image',
