@@ -15,30 +15,4 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$silver_quantum = Benlumia007\Backdrop\Framework::get_instance();
-
-$silver_quantum->menus = new Benlumia007\Backdrop\Menu\Menu(
-	$args = [
-		'primary' => esc_html__( 'Primary Navigation', 'silver-quantum' ),
-		'socal' => esc_html__( 'Social Navigation', 'silver-quantum' ),
-	]
-);
-
-$silver_quantum->sidebars = new Benlumia007\Backdrop\Sidebar\Sidebar(
-	$args = [
-		'primary' => [
-			'name' => esc_html__( 'Primary Sidebar', 'silver-quantum' ),
-			'desc' => esc_html__( 'Primary', 'silver-quantum' ),
-		],
-		'secondary' => [
-			'name' => esc_html__( 'Secondary Sidebar', 'silver-quantum' ),
-			'desc' => esc_html__( 'Pages', 'silver-quantum' ),
-		],
-		'custom' => [
-			'name' => esc_html__( 'Custom Sidebar', 'silver-quantum' ),
-			'desc' => esc_html__( 'Custom Sidebar', 'silver-quantum' ),
-		]
-	]
-);
-
-$silver_quantum->customize = new SilverQuantum\Component\ThemeLayouts();
+$silver_quantum = new Benlumia007\Backdrop\Framework();
