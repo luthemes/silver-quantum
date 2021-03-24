@@ -16,3 +16,9 @@
  * This will create an instance of the framework allowing you to initialize the theme.
  */
 $silver_quantum = new Benlumia007\Backdrop\Framework();
+
+
+/**
+ * Boot the Framework
+ */
+$silver_quantum->boot();
