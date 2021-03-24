@@ -1,13 +1,13 @@
 <?php
 /**
- * Silver Quantum ( framework.php )
+ * Silver Quantum ( app/framework.php )
  *
  * This file is used to create a new framework instance and adds specific features to the theme.
  *
  * @package   Silver Quantum
- * @copyright Copyright (C) 2014-2020. Benjamin Lu
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
  * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @author    Benjamin Lu ( https://getbenonit.com )
  */
 
 /**
