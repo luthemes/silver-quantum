@@ -19,7 +19,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ) ?></a>
-<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+<div id="masthead" class="top-navigation">
+	<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+</div>
 <div id="container" class="site-container">
 	<header id="site-header" class="site-header header-image">
 		<div class="site-branding">
