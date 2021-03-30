@@ -20,7 +20,7 @@
 //
 // These are used throughout the code but don't output CSS on their own. Things
 // like functions, mixins, and extensions go here.
-// @import 'tools/index';
+@import 'tools/index';
 
 // -----------------------------------------------------------------------------
 // Import generic styles.
@@ -29,7 +29,7 @@
 // This is the first point that real CSS is output. Resets, normalization,
 // fonts, etc. are best handled here. These are the base styles that other
 // styles will build upon.
-// @import 'generic/index';
+@import 'generic/index';
 
 // -----------------------------------------------------------------------------
 // Import element styles.
@@ -61,7 +61,7 @@
 // -----------------------------------------------------------------------------
 //
 // Imports global block styles.
-// @import 'blocks/index';
+@import 'blocks/index';
 
 // -----------------------------------------------------------------------------
 // Import utility styles.
