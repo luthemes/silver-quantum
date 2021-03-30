@@ -1,11 +1,11 @@
 <?php
 /**
- * Silver Quantum ( functions-setup.php )
+ * Silver Quantum ( app/functions-setup.php )
  *
  * @package   Silver Quantum
- * @copyright Copyright (C) 2014-2020. Benjamin Lu
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
  * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @author    Benjamin Lu ( https://getbenonit.com )
  */
 
 /**
@@ -89,7 +89,7 @@ add_action( 'after_setup_theme', function() {
 		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
 		 */
 		add_theme_support( 'editor-styles' );
-		add_editor_style( 'assets/css/editor-styles.css' );
+		add_editor_style( 'assets/css/editor.css' );
 
 		/**
 		 * Load theme translation.
@@ -106,7 +106,7 @@ add_action( 'after_setup_theme', function() {
 		add_theme_support( 'custom-header',
 			[
 				'default-text-color' => 'ffffff',
-				'default-image'      => get_theme_file_uri( '/public/images/header-image.jpg' ),
+				'default-image'      => get_parent_theme_file_path( '/public/images/header-image.jpg' ),
 				'height'             => 1200,
 				'max-width'          => 2000,
 				'width'              => 2000,
