@@ -53,8 +53,8 @@ class ImageRadio extends WP_Customize_Control {
 	 * @return void
 	 */
 	public function enqueue() {
-		wp_enqueue_style( 'backdrop-image-radio-css', get_parent_theme_file_uri( 'public/css/control-image-radio.css' ), array(), $this::$version );
-		wp_enqueue_script( 'backdrop-image-radio-js', get_parent_theme_file_uri( 'public/js/control-image-radio.js' ), array( 'jquery' ), $this::$version, true );
+		wp_enqueue_style( 'silver-quantum-image-radio-css', get_parent_theme_file_uri( 'public/assets/css/image-radio.css' ), array(), $this::$version );
+		wp_enqueue_script( 'silver-quantum-image-radio-js', get_parent_theme_file_uri( 'public/assets/js/image-radio.js' ), array( 'jquery' ), $this::$version, true );
 	}
 
     /**
