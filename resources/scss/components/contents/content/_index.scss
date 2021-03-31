@@ -2,12 +2,34 @@
     line-height: 1.8rem;
 
     .post {
+        margin-bottom: 3rem;
+
         .entry-header {
             text-align: center;
 
             .entry-title {
                 margin: 0;
                 padding: 0;
+
+                a {
+                    border-bottom: none;
+                    color: #111111;
+                }
+            }
+
+            .entry-metadata {
+                margin: 0.2rem 0;
+
+                .fa-user {
+                    color: #111111;
+                    padding-right: 0.313em;
+                }
+
+                .fa-calendar-alt,
+                .fa-comment {
+                    color: #111111;
+                    padding: 0 0.313em 0 0.688em;
+                }
             }
         }
     }
@@ -22,5 +44,32 @@
     .widget-area {
         float: left;
         width: 25.3968253968254%;
+    }
+}
+
+.right-sidebar {
+    .content-area {
+        float: left;
+        width: 71.42857142857143%;
+    }
+
+    .widget-area {
+        float: right;
+        width: 25.3968253968254%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .left-sidebar,
+    .right-sidebar {
+        .content-area {
+            float: none;
+            width: 100%;
+        }
+
+        .widget-area {
+            float: none;
+            width: 100%;
+        }
     }
 }
