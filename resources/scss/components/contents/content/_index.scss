@@ -1,4 +1,26 @@
 .content-area {
-    margin: 0 auto;
-    max-width: 810px;
+    line-height: 1.8rem;
+
+    .post {
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.left-sidebar {
+    .content-area {
+        float: right;
+        width: 71.42857142857143%;
+    }
+
+    .widget-area {
+        float: left;
+        width: 25.3968253968254%;
+    }
 }
