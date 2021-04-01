@@ -1,4 +1,11 @@
 a {
-    border-bottom: 0.063em solid #0000ff;
+    border-bottom: 0.063em solid #8B0000;
+    color: #8B0000;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+        border-bottom: 0.063em solid #000080;
+        color: #000080;
+    }
 }
