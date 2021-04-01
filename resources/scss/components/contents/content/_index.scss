@@ -1,6 +1,12 @@
 .content-area {
     line-height: 1.8rem;
 
+    .sticky {
+        background: #eeeeee;
+        border: 0.063rem solid #cccccc;
+        padding: 1.125rem;
+    }
+
     .archive-header {
         text-align: center;
 
@@ -26,6 +32,7 @@
             text-align: center;
 
             .entry-title {
+                line-height: 3rem;
                 margin: 0;
                 padding: 0;
 
