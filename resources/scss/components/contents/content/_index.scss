@@ -1,6 +1,24 @@
 .content-area {
     line-height: 1.8rem;
 
+    .archive-header {
+        text-align: center;
+
+        .archive-title {
+            margin: 0 0 3rem 0;
+            padding: 0;
+
+        }
+
+        .archive-description {
+            display: block;
+            font-family: font-family( 'primary' );
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 0.5rem;
+        }
+    }
+
     .post {
         margin-bottom: 3rem;
 

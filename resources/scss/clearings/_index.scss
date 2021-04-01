@@ -1,5 +1,9 @@
 .site-container,
-.site-content {
+.site-content,
+.site-main,
+.content-area,
+.post-navigation,
+.posts-navigation {
     &:before,
     &:after {
         clear: both;
