@@ -52,7 +52,7 @@ add_filter( 'get_the_archive_title', function() {
 	} elseif ( is_month() ) {
 		$title = esc_html__( 'Month', 'silver-quantum' ) . '<span class="archive-description">' . get_the_date( _x( 'F', 'monthly archives date format', 'silver-quantum' ) ) . '</span>';
 	} elseif ( is_day() ) {
-		$title = esc_html__( 'Day', 'silver-quantum' ) . '<span class="archive-description">' . get_the_date( _x( 'F j Y', 'daily archives date format', 'silver-quantum' ) ) . '</span>';
+		$title = esc_html__( 'Day', 'silver-quantum' ) . '<span class="archive-description">' . get_the_date( _x( 'F j, Y', 'daily archives date format', 'silver-quantum' ) ) . '</span>';
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
 			$title = _x( 'Asides', 'post format archive title', 'silver-quantum' );
