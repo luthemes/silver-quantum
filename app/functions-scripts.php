@@ -64,32 +64,30 @@ add_action(
 	}
 );
 
-add_action(
-	'wp_enqueue_scripts', function() {
-		$custom_image = esc_url( get_theme_mod( 'header_image', get_theme_file_uri( '/public/images/header-image.jpg' ) ) );
+add_action( 'wp_enqueue_scripts', function() {
+	$custom_image = esc_url( get_theme_mod( 'header_image', get_parent_theme_file_uri( '/public/images/header-image.jpg' ) ) );
 	
-		$custom_css = "      
-			.site-header.header-image {
-				background: url({$custom_image});
-				background-attachment: fixed;
-				background-position: center;
+	$custom_css = "      
+		.site-header.header-image {
+			background: url({$custom_image});
+			background-attachment: fixed;
+			background-position: center;
+		}
+		
+		@media screen and (max-width: 30em) {
+			.site-header {
+				padding-top: 10em;
 			}
-			
-			@media screen and (max-width: 30em) {
-				.site-header {
-					padding-top: 10em;
-				}
-			}
+		}
 
-			@media screen and ( min-width: 30.063em ) and ( max-width: 37.5em ) {
-				.site-header {
-					padding-top: 15em;
-				}
+		@media screen and ( min-width: 30.063em ) and ( max-width: 37.5em ) {
+			.site-header {
+				padding-top: 15em;
 			}
-		";
-		wp_add_inline_style( 'silver-quantum-screen', $custom_css );
-	}
-);
+		}
+	";
+	wp_add_inline_style( 'silver-quantum-screen', $custom_css );
+} );
 
 add_action(
 	'enqueue_block_editor_assets',

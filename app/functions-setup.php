@@ -102,28 +102,26 @@ add_action( 'after_setup_theme', function() {
  * Add support for custom header.
  */
 add_action( 'after_setup_theme', function() {
+	add_theme_support( 'custom-header',
+		[
+			'default-text-color' => 'ffffff',
+			'default-image'      => get_parent_theme_file_uri( '/public/images/header-image.jpg' ),
+			'height'             => 1200,
+			'max-width'          => 2000,
+			'width'              => 2000,
+			'flex-height'        => false,
+			'flex-width'         => false,
+		]
+	);
 
-		add_theme_support( 'custom-header',
-			[
-				'default-text-color' => 'ffffff',
-				'default-image'      => get_parent_theme_file_path( '/public/images/header-image.jpg' ),
-				'height'             => 1200,
-				'max-width'          => 2000,
-				'width'              => 2000,
-				'flex-height'        => false,
-				'flex-width'         => false,
-			]
-		);
-
-		register_default_headers(
-			array(
-				'header-image' => array(
-					'url'           => '%s/public/images/header-image.jpg',
-					'thumbnail_url' => '%s/public/images/header-image.jpg',
-					'description'   => esc_html__( 'Header Image', 'silver-quantum' ),
-				),
-			)
-		);
+	register_default_headers(
+		array(
+			'header-image' => array(
+				'url'           => '%s/public/images/header-image.jpg',
+				'thumbnail_url' => '%s/public/images/header-image.jpg',
+				'description'   => esc_html__( 'Header Image', 'silver-quantum' ),
+			),
+	) );
 } );
 
 /**
