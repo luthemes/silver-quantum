@@ -46,23 +46,21 @@ add_action(
 	}
 );
 
-add_action(
-	'wp_enqueue_scripts',
-	function() {
-		$text_color = get_header_textcolor();
-		if ( get_theme_support( 'custom-header', 'default-text-color' ) === $text_color ) {
-			return;
-		}
-		$value      = display_header_text() ? sprintf( 'color: #%s', esc_html( $text_color ) ) : 'display: none;';
-		$custom_css = "
-			.site-branding .site-title a,
-			.site-description {
-				{$value}
-			}
-		";
-		wp_add_inline_style( 'silver-quantum-style', $custom_css );
+add_action( 'wp_enqueue_scripts', function() {
+	$text_color = get_header_textcolor();
+	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $text_color ) {
+		return;
 	}
-);
+	$value      = display_header_text() ? sprintf( 'color: #%s', esc_html( $text_color ) ) : 'display: none;';
+	
+	$custom_css = "
+		.site-header .site-branding .site-title a,
+		.site-header .site-branding .site-description {
+			{$value}
+		}
+	";
+	wp_add_inline_style( 'silver-quantum-screen', $custom_css );
+} );
 
 add_action( 'wp_enqueue_scripts', function() {
 	$custom_image = esc_url( get_theme_mod( 'header_image', get_parent_theme_file_uri( '/public/images/header-image.jpg' ) ) );
