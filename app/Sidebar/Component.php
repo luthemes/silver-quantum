@@ -10,15 +10,11 @@
 
 
 namespace SilverQuantum\Sidebar;
-use Benlumia007\Backdrop\Component\Sidebar as SidebarContract;
+use Benlumia007\Backdrop\Theme\Sidebar\Component as SidebarContract;
 
 class Component extends SidebarContract {
-    public function __construct( $sidebar_id = [] ) {
-        $this->sidebar_id = $this->defaults();
-    }
-
-    public function defaults() {
-        return array(
+    public function sidebars() {
+        return [
             'primary' => [
                 'name' => esc_html__( 'Primary Sidebar', 'silver-quantum' ),
                 'desc' => esc_html__( 'test', 'silver-quantum' ),
@@ -27,6 +23,6 @@ class Component extends SidebarContract {
                 'name' => esc_html__( 'Secondary Sidebar', 'silver-quantum' ),
                 'desc' => esc_html__( 'test', 'silver-quantum' ),
             ]
-        );
+        ];
     }
 }   
