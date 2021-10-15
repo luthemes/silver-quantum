@@ -19,11 +19,11 @@
  * 1.0 - Compatibility Check
  */
 function silver_quantum_compatibility_check() {
-	if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) ) {
+	if ( version_compare( $GLOBALS['wp_version'], '4.9', '<' ) ) {
 		return sprintf(
 			// translators: 1 =  a version string, 2 = current wp version string.
 			__( 'silver-quantum requires at least WordPress version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
-			'5.0',
+			'4.9',
 			$GLOBALS['wp_version']
 		);
 	} elseif ( version_compare( PHP_VERSION, '5.6', '<' ) ) {
@@ -41,7 +41,7 @@ function silver_quantum_compatibility_check() {
  * Triggered after switch themes and check if it meets the requirements.
  */
 function silver_quantum_switch_theme() {
-	if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) || version_compare( PHP_VERSION, '5.6', '<' ) ) {
+	if ( version_compare( $GLOBALS['wp_version'], '4.9', '<' ) || version_compare( PHP_VERSION, '5.6', '<' ) ) {
 		switch_theme( get_option( 'theme_switched' ) );
 		add_action( 'admin_notices', 'silver_quantum_upgrade_notice' );
 	}
