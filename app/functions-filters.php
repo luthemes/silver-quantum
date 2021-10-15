@@ -84,3 +84,10 @@ add_filter( 'get_the_archive_title', function() {
 	}
 	return $title;
 } );
+
+/**
+ * Here, we are going to setup template path
+ */
+add_filter( 'backdrop/template/path', function() {
+	return 'public/views';
+} );
