@@ -58,6 +58,23 @@
             }
         }
     }
+
+    .page {
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                line-height: 3rem;
+                margin: 0;
+                padding: 0;
+
+                a {
+                    border-bottom: none;
+                    color: #111111;
+                }
+            }
+        } 
+    }
 }
 
 .left-sidebar {
