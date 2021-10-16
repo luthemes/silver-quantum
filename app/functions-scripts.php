@@ -33,11 +33,6 @@ add_action(
 		wp_enqueue_style( 'silver-quantum-screen', get_parent_theme_file_uri( 'public/assets/css/screen.css' ), array(), '1.0.0' );
 
 		/**
-		 * We will be enqueue the app.js file, which mainly be for the navigation only.
-		 */
-		wp_enqueue_script( 'silver-quantum-app', get_parent_theme_file_uri( 'public/assets/js/app.js' ), array('jquery'), '1.0.0', true );
-
-		/**
 		 * This allows users to comment by clicking on reply so that it gets nested.
 		 */
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

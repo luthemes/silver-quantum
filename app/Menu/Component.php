@@ -13,7 +13,7 @@ class Component extends MenuContract {
     }
 
 	public function enqueue() {
-		wp_enqueue_script( 'silver-quantum-navigation', get_theme_file_uri( 'public/js/app.js' ), array('jquery'), '1.0.0', true );
+		wp_enqueue_script( 'silver-quantum-navigation', get_theme_file_uri( 'public/assets/js/app.js' ), array('jquery'), '1.0.0', true );
 		wp_localize_script( 'silver-quantum-navigation', 'silverQuantumScreenReaderText', array(
 			'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'silver-quantum' ) . '</span>',
 			'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'silver-quantum' ) . '</span>',
