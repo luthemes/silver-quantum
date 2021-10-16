@@ -3,9 +3,10 @@
  * Silver Quantum ( archive.php )
  *
  * @package   Silver Quantum
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
  * @copyright Copyright (C) 2014-2021. Benjamin Lu
- * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 ?>
 <?php $engine = Benlumia007\Backdrop\App::resolve( 'view/engine' ); ?>

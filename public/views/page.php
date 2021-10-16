@@ -17,7 +17,7 @@
 					while ( have_posts() ) : the_post();
 						$engine->display( 'content/page' );
 					endwhile;
-					comments_template();
+						comments_template();
 				?>
 			</main>
 			<?php Benlumia007\Backdrop\Theme\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>

@@ -34,7 +34,6 @@ $silver_quantum->provider( SilverQuantum\Menu\Provider::class );
 $silver_quantum->provider( SilverQuantum\Sidebar\Provider::class );
 // $silver_quantum->provider( SilverQuantum\ThemeLayouts\Provider::class );
 
-
 /**
  * Boot the Framework
  */

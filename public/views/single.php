@@ -17,13 +17,11 @@
 					while ( have_posts() ) : the_post();
 						$engine->display( 'content/single' );
 					endwhile;
-						the_post_navigation(
-							array(
-								'next_text' => '<span class="post-next" aria-hidden="true">' . esc_html__( 'Next', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
-								'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Previous', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
-							)
-						);
-				comments_template();
+						the_post_navigation( [
+							'next_text' => '<span class="post-next" aria-hidden="true">' . esc_html__( 'Next', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
+							'prev_text' => '<span class="post-previous" aria-hidden="true">' . esc_html__( 'Previous', 'silver-quantum' ) . '</span><span class="post-title">%title</span>',
+						] );
+						comments_template();
 				?>
 			</main>
 			<?php Benlumia007\Backdrop\Theme\Sidebar\display( 'sidebar', [ 'primary' ] ); ?>
