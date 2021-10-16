@@ -14,3 +14,13 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+.grid {
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr;
+	grid-gap: 1.125rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

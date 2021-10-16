@@ -77,16 +77,7 @@ add_action( 'after_setup_theme', function() {
 		 */
 		add_image_size( 'silver-quantum-large-thumbnails', 1170, 614, true );
 
-		/**
-		 * By add_theme_support( 'wp-block-styles' );. This should enable block styles on the frontend.
-		 */
-		add_theme_support( 'wp-block-styles' );
 
-		/**
-		 * By adding add_theme_support( 'editor-styles' ); and add_editor_style(); to enable styles in the backend of the editor.
-		 */
-		add_theme_support( 'editor-styles' );
-		add_editor_style( 'assets/css/editor.css' );
 
 		/**
 		 * Load theme translation.
