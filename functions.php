@@ -34,7 +34,7 @@ add_action( 'after_switch_theme', function() {
 						);
 					} elseif ( version_compare( PHP_VERSION, '5.6', '<' ) ) {
 						printf(
-							esc_html__( 'silver-quantum requires at least PHP version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
+							esc_html__( 'Silver Quantum requires at least PHP version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
 							'5.6',
 							PHP_VERSION,
 						);
