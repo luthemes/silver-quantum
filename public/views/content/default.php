@@ -21,10 +21,11 @@
 			<?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
 		</div>
 	</header>
-	<div class="post-thumbnails">
-		<?php $size = 'left-sidebar' === get_theme_mod( 'global_layout', 'left-sidebar' ) ? 'medium' : 'large'; ?>
-		<?php the_post_thumbnail( "silver-quantum-{$size}-thumbnails"); ?>
-	</div>
+    <?php if ( has_post_thumbnail() ) { ?>
+        <picture class="post-thumbnail">
+            <?php the_post_thumbnail( 'silver-quantum-medium-thumbnails' ); ?>
+        </picture>
+    <?php } ?>
 	<div class="entry-excerpt">
 		<?php the_excerpt(); ?>
 	</div>

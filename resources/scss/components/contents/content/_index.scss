@@ -23,12 +23,17 @@
             font-size: 18px;
             font-weight: normal;
             margin-top: 0.5rem;
-            margin-bottom: 2.250rem;
         }
     }
 
     .post {
         margin-bottom: 3rem;
+
+        .post-thumbnail {
+            .size-silver-quantum-medium-thumbnails {
+                box-shadow: 3px 3px #cccccc;
+            }
+        }
 
         .entry-header {
             text-align: center;
@@ -89,7 +94,7 @@
                 margin: 0;
                 padding: 0;
 
-                .author {
+                .post {
                     .post-thumbnail {
                         .size-silver-quantum-medium-thumbnails {
                             box-shadow: 3px 3px #cccccc;
@@ -105,6 +110,10 @@
                             font-size: 0.813rem;
                             margin-top: -0.5rem;
                         }
+                    }
+
+                    .entry-content {
+                        margin-top: 1.125rem;
                     }
                 }
             }
