@@ -10,18 +10,22 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'author' ); ?>>
+    <?php if ( has_post_thumbnail() ) { ?>
+        <picture class="post-thumbnail">
+            <?php the_post_thumbnail( 'silver-quantum-medium-thumbnails' ); ?>
+        </picture>
+    <?php } ?>
     <div class="entry-content">
-    <?php the_post_thumbnail( 'silver-quantum-medium-thumbnails' ); ?>
-            <header class="entry-header">
+        <header class="entry-header">
             <h2 class="entry-title"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
             <div class="entry-metadata">
-            <?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
-            <?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
-            <?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
+                <?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
+                <?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
+                <?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
             </div>
-            </header>
-            <div class="entry-excerpt">
-            <?php the_excerpt(); ?>
-            </div>
+        </header>
+        <div class="entry-excerpt">
+        <?php the_excerpt(); ?>
+        </div>
     </div>
 </article>

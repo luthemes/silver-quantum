@@ -90,12 +90,21 @@
                 padding: 0;
 
                 .author {
-                    .entry-header {
-                        .entry-metadata {
-                            font-size: 0.813rem;
+                    .post-thumbnail {
+                        .size-silver-quantum-medium-thumbnails {
+                            box-shadow: 3px 3px #cccccc;
                         }
                     }
-                    .entry-content {
+                    .entry-header {
+                        .entry-title {
+                            font-size: 1.8rem;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .entry-metadata {
+                            font-size: 0.813rem;
+                            margin-top: -0.5rem;
+                        }
                     }
                 }
             }
