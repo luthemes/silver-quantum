@@ -77,15 +77,25 @@
             }
         } 
     }
+}
 
-    .author {
-        .entry-content {
+.no-sidebar {
+    .content-area {
+        .loop {
             .grid {
-                li {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 1.125rem;
+                margin: 0;
+                padding: 0;
+
+                .author {
                     .entry-header {
                         .entry-metadata {
                             font-size: 0.813rem;
                         }
+                    }
+                    .entry-content {
                     }
                 }
             }
