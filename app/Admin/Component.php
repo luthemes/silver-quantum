@@ -29,7 +29,7 @@ class Component extends AdminContract {
 	 * Register Menu
 	 */
 	public function menu() {
-		add_theme_page( $this->theme_info->name, $this->theme_info->name, 'manage_options', 'theme-page', array( $this, 'callback') );
+		add_theme_page( $this->theme_info->name, $this->theme_info->name, 'manage_options', 'theme-page', [ $this, 'callback' ] );
 	}
 
 	/**
@@ -41,9 +41,10 @@ class Component extends AdminContract {
 	}
 
 	public function tabs( $current = 'introduction' ) {
-		$tabs = array(
-			'introduction' => esc_html__( 'Introduction', 'silver-quantum' ),
-		);
+		$tabs = [
+            'introduction' => esc_html__( 'Introduction', 'silver-quantum' ),
+            'theme_information' => esc_html__( 'Theme Information', 'silver-quantum' ),
+        ];
 
 		$admin_nonce = wp_create_nonce( 'admin_nonce' );
 
@@ -76,25 +77,30 @@ class Component extends AdminContract {
 				case 'introduction':
 					$this->introduction();
 					break;
+                case 'theme_information':
+                    $this->theme_information();
+                    break;
 			}
 		}
 		echo '</div>';
 	}
 
 	public function introduction() { ?>
-		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'silver-quantum' ); ?></h2>
-		<ul>
-			<li><?php echo esc_html( __('Theme Name: ', 'silver-quantum' ) . $this->theme_info->name ); ?></li>
-			<li><?php echo esc_html( __('Theme Version: ', 'silver-quantum' ) . $this->theme_info->version ); ?></li>
-		</ul>
 		<h2 class="admin-title"><?php esc_html_e( 'Welcome', 'silver-quantum' ); ?></h2>
 		<?php esc_html_e( 'Hope you are enjoying the theme. ', 'silver-quantum' ); ?>
 		<h2 class="admin-title"><?php esc_html_e( 'Recommended Plugins', 'silver-quantum' ); ?></h2>
 		<ul>
-			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/jetpack' ); ?>"><?php esc_html_e( 'Jetpack by WordPress.com', 'silver-quantum' ); ?></a></li>
 			<li><a href="<?php esc_url( 'https://wordpress.org/plugins/regenerate-thumbnails' ); ?>"><?php esc_html_e( 'Regenerate Thumbnails', 'silver-quantum' ); ?></a></li>
 		</ul>
 	<?php }
+
+    public function theme_information() { ?>
+		<h2 class="admin-title"><?php esc_html_e( 'Theme Info', 'silver-quantum' ); ?></h2>
+		<ul>
+			<li><?php echo esc_html( __('Name: ', 'silver-quantum' ) . $this->theme_info->name ); ?></li>
+			<li><?php echo esc_html( __('Version: ', 'silver-quantum' ) . $this->theme_info->version ); ?></li>
+		</ul>
+    <?php }
 
 	public function admin_enqueue() {
 		wp_register_style( 'admin-style', get_theme_file_uri() . '/public/assets/css/admin.css', array(), '1.0.0' );
