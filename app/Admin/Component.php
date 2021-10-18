@@ -24,8 +24,6 @@ class Component extends AdminContract {
 	 */
 	public function __construct() {
 		$this->theme_info = wp_get_theme();
-		add_action( 'admin_menu', array( $this, 'menu' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue' ), true, '1.0.0' );
 	}
 	/**
 	 * Register Menu
