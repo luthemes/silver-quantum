@@ -8,14 +8,13 @@
  * @author    Benjamin Lu ( https://benjlu.com )
  */
 
-namespace SilverQuantum\Component;
-
-use Benlumia007\Backdrop\Contracts\Admin\Admin as AdminPage;
+namespace SilverQuantum\Admin;
+use Benlumia007\Backdrop\Theme\Admin\Component as AdminContract;
 
 /**
  * Implements Displayable
  */
-class Admin extends AdminPage {
+class Component extends AdminContract {
 	/**
 	 * Theme Info
 	 */
