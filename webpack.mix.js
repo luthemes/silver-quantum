@@ -86,4 +86,5 @@ mix.js( `${devPath}/js/app.js`, 'assets/js' )
 // Compile SASS/CSS.
 mix.sass( `${devPath}/scss/screen.scss`, 'assets/css', )
    .sass( `${devPath}/scss/editor.scss`, 'assets/css' )
+   .sass( `${devPath}/scss/admin.scss`, 'assets/css' )
    .sass( `${devPath}/scss/customize/image-radio.scss`, 'assets/css', );
