@@ -213,10 +213,11 @@ ol.children {
 .comment-form .comment-form-author input[type="text"],
 .comment-form .comment-form-email input[type="email"] {
     border: 0.063em solid #cccccc;
+    float: right;
     font-family: 'Merriewather', serif;
     font-size: 1em;
     padding: 0.6em;
-    width: 20.625em;
+    width: 23em;    
 }
 
 .comment-form .comment-form-url input[type="url"] {

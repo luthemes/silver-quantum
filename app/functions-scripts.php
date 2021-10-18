@@ -66,18 +66,6 @@ add_action( 'wp_enqueue_scripts', function() {
 			background-attachment: fixed;
 			background-position: center;
 		}
-		
-		@media screen and (max-width: 30em) {
-			.site-header {
-				padding-top: 10em;
-			}
-		}
-
-		@media screen and ( min-width: 30.063em ) and ( max-width: 37.5em ) {
-			.site-header {
-				padding-top: 15em;
-			}
-		}
 	";
 	wp_add_inline_style( 'silver-quantum-screen', $custom_css );
 } );
