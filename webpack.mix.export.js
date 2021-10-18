@@ -23,10 +23,8 @@ let exportPath = 'silver-quantum';
 // Theme root-level files to include.
 let files = [
 	'changelog.md',
-	'comments.php',
 	'functions.php',
 	'index.php',
-	'readme.md',
 	'readme.txt',
 	'screenshot.png',
 	'style.css'
