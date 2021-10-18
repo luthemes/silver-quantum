@@ -1,17 +1,17 @@
-<?php
+<?php // phpcs:ignore
 /**
- * Silver Quantum ( ImageRadio.php )
+ * Camaraderie ( ImageRadio.php )
  *
- * @package   Silver Quantum
- * @copyright Copyright (C) 2014-2021. Benjamin Lu
- * @license   GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @package     Camaraderie
+ * @copyright   Copyright (C) 2017-2020. Benjamin Lu
+ * @license     GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+ * @author      Benjamin Lu ( https://benjlu.com )
  */
 
 /**
  * Define namespace
  */
-namespace SilverQuantum\ThemeLayouts\Control;
+namespace SilverQuantum\Customize\Layouts\Control;
 use WP_Customize_Control;
 
 /**
@@ -53,8 +53,8 @@ class ImageRadio extends WP_Customize_Control {
 	 * @return void
 	 */
 	public function enqueue() {
-		wp_enqueue_style( 'silver-quantum-image-radio-css', get_parent_theme_file_uri( 'public/assets/css/image-radio.css' ), array(), $this::$version );
-		wp_enqueue_script( 'silver-quantum-image-radio-js', get_parent_theme_file_uri( 'public/assets/js/image-radio.js' ), array( 'jquery' ), $this::$version, true );
+		wp_enqueue_style( 'silver-quantum-image-radio-css', get_theme_file_uri( 'public/css/control-image-radio.css' ), array(), $this::$version );
+		wp_enqueue_script( 'silver-quantum-image-radio-js', get_theme_file_uri( 'public/js/control-image-radio.js' ), array( 'jquery' ), $this::$version, true );
 	}
 
     /**

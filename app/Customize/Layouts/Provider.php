@@ -1,19 +1,20 @@
 <?php
 /**
- * Backdrop Core ( src/Tools/ServiceProvider.php )
+ * Layouts
  *
- * @package   Backdrop Core
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @license   GNU General PUblic License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * @package   Silver Quantum
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 /**
  * Define namespace
  */
-namespace SilverQuantum\ThemeLayouts;
+namespace SilverQuantum\Customize\Layouts;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
-use SilverQuantum\ThemeLayouts\Component;
+use SilverQuantum\Customize\Layouts\Component;
 
 class Provider extends ServiceProvider {
 	/**

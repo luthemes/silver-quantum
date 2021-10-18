@@ -30,9 +30,9 @@ $silver_quantum->provider( Benlumia007\Backdrop\Template\View\Provider::class );
 /**
  * Register Service Provider with the Framework
  */
+$silver_quantum->provider( SilverQuantum\Customize\Layouts\Provider::class );
 $silver_quantum->provider( SilverQuantum\Menu\Provider::class );
 $silver_quantum->provider( SilverQuantum\Sidebar\Provider::class );
-// $silver_quantum->provider( SilverQuantum\ThemeLayouts\Provider::class );
 
 /**
  * Boot the Framework
