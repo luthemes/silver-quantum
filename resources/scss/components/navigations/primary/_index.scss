@@ -235,6 +235,10 @@
                     left: -9999em;
                     top: 100%;
 
+                    li:first-child {
+                        margin-top: 0.5rem;
+                    }
+
                     li {
                         margin-bottom: 0.063em;
                         position: relative;
@@ -255,6 +259,10 @@
                             left: -9999em;
                             position: absolute;
                             top: 0;
+
+                            li:first-child {
+                                margin-top: 0;
+                            }
 
                             li {
                                 a {
