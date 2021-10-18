@@ -1,6 +1,6 @@
 .site-header {
     .site-branding {
-        padding: 6rem;
+        padding: 3rem;
         text-align: center;
 
         .site-title,
@@ -10,7 +10,7 @@
         }
 
         .site-title {
-            font-size: $text-7xl;
+            font-size: $text-4xl;
 
             a {
                 border-bottom: none;
@@ -23,6 +23,68 @@
         .site-description {
             color: #ffffff;
             text-shadow: 4px 4px #000000;
+        }
+    }
+}
+
+@media screen and ( min-width: 768px ) {
+    .site-header {
+        .site-branding {
+            padding: 6rem;
+            text-align: center;
+    
+            .site-title,
+            .site-description {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .site-title {
+                font-size: $text-7xl;
+    
+                a {
+                    border-bottom: none;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-shadow: 4px 4px #000000;
+                }
+            }
+    
+            .site-description {
+                color: #ffffff;
+                text-shadow: 4px 4px #000000;
+            }
+        }
+    }
+}
+
+@media only screen and ( min-width: 1024px ) {
+    .site-header {
+        .site-branding {
+            padding: 6rem;
+            text-align: center;
+    
+            .site-title,
+            .site-description {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .site-title {
+                font-size: $text-7xl;
+    
+                a {
+                    border-bottom: none;
+                    color: #ffffff;
+                    text-decoration: none;
+                    text-shadow: 4px 4px #000000;
+                }
+            }
+    
+            .site-description {
+                color: #ffffff;
+                text-shadow: 4px 4px #000000;
+            }
         }
     }
 }

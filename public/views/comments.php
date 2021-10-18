@@ -3,9 +3,10 @@
  * Silver Quantum ( comments.php )
  *
  * @package   Silver Quantum
- * @copyright Copyright (C) 2014-2020. Benjamin Lu
- * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 ?>
@@ -33,13 +34,11 @@ if ( post_password_required() ) {
 		<?php } ?>
 		<ol class="comment-list">
 			<?php
-				wp_list_comments(
-					array(
-						'style'       => 'ol',
-						'short_ping'  => true,
-						'avatar_size' => 70,
-					)
-				);
+				wp_list_comments( [
+					'style'       => 'ol',
+					'short_ping'  => true,
+					'avatar_size' => 70,
+				] );
 			?>
 		</ol>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { ?>

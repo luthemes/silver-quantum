@@ -42,17 +42,17 @@ add_filter( 'excerpt_length', function() {
  */
 add_filter( 'get_the_archive_title', function() {
 	if ( is_category() ) {
-		$title = esc_html__( 'Category', 'silver-quantum' ) . '<span class="archive-description">' . single_cat_title( '', false ) . '</span>';
+		$title = single_cat_title( '', false );
 	} elseif ( is_tag() ) {
-		$title = esc_html__( 'Tag', 'silver-quantum' ) . '<span class="archive-description">' . single_tag_title( '', false ) . '</span>';
+		$title = single_tag_title( '', false );
 	} elseif ( is_author() ) {
-		$title = esc_html__( 'Author', 'silver-quantum' ) . '<span class="archive-description">' . get_the_author() . '</span>';
+		$title = get_the_author();
 	} elseif ( is_year() ) {
-		$title = esc_html__( 'Year', 'silver-quantum' ) . '<span class="archive-description">' . get_the_date( _x( 'Y', 'yearly archives date format', 'silver-quantum' ) ) . '</span>';
+		$title = get_the_date( _x( 'Y', 'yearly archives date format', 'silver-quantum' ) );
 	} elseif ( is_month() ) {
-		$title = esc_html__( 'Month', 'silver-quantum' ) . '<span class="archive-description">' . get_the_date( _x( 'F Y', 'monthly archives date format', 'silver-quantum' ) ) . '</span>';
+		$title = get_the_date( _x( 'F Y', 'monthly archives date format', 'silver-quantum' ) );
 	} elseif ( is_day() ) {
-		$title = esc_html__( 'Day', 'silver-quantum' ) . '<span class="archive-description">' . get_the_date( _x( 'F j, Y', 'daily archives date format', 'silver-quantum' ) ) . '</span>';
+		$title = get_the_date( _x( 'F j, Y', 'daily archives date format', 'silver-quantum' ) );
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
 			$title = _x( 'Asides', 'post format archive title', 'silver-quantum' );
@@ -83,4 +83,11 @@ add_filter( 'get_the_archive_title', function() {
 		$title = esc_html__( 'Archives', 'silver-quantum' );
 	}
 	return $title;
+} );
+
+/**
+ * Here, we are going to setup template path
+ */
+add_filter( 'backdrop/template/path', function() {
+	return 'public/views';
 } );

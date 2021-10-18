@@ -33,11 +33,6 @@ add_action(
 		wp_enqueue_style( 'silver-quantum-screen', get_parent_theme_file_uri( 'public/assets/css/screen.css' ), array(), '1.0.0' );
 
 		/**
-		 * We will be enqueue the app.js file, which mainly be for the navigation only.
-		 */
-		wp_enqueue_script( 'silver-quantum-app', get_parent_theme_file_uri( 'public/assets/js/app.js' ), array('jquery'), '1.0.0', true );
-
-		/**
 		 * This allows users to comment by clicking on reply so that it gets nested.
 		 */
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -71,25 +66,6 @@ add_action( 'wp_enqueue_scripts', function() {
 			background-attachment: fixed;
 			background-position: center;
 		}
-		
-		@media screen and (max-width: 30em) {
-			.site-header {
-				padding-top: 10em;
-			}
-		}
-
-		@media screen and ( min-width: 30.063em ) and ( max-width: 37.5em ) {
-			.site-header {
-				padding-top: 15em;
-			}
-		}
 	";
 	wp_add_inline_style( 'silver-quantum-screen', $custom_css );
 } );
-
-add_action(
-	'enqueue_block_editor_assets',
-	function() {
-		wp_enqueue_style( 'silver-quantum-custom-fonts', get_theme_file_uri( '/vendor/benlumia007/backdrop-core/assets/fonts/custom-fonts.css' ), array(), '1.0.0' );
-	}
-);

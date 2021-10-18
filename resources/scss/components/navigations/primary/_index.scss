@@ -102,11 +102,10 @@
 	font-family: font-family( 'primary' );
 	font-size: 1rem;
     color: #ffffff;
-    display: none;
+    display: none;  
     padding: 0.75em 0.625em 0.625em 0.75em;
-    position: absolute;
-    right: 1em;
-    top: 3em;
+    right: 0.5rem;
+    text-align: right;
 }
 
 .toggled {
@@ -153,7 +152,7 @@
     .menu-toggle {
         display: block;
         position: fixed;
-        top: 3.250em;
+        top: 0.5rem;
 	}
 	
 	.toggled {
@@ -167,12 +166,12 @@
     .menu-toggle {
         display: block;
         position: fixed;
-        top: 3.250em;
+        top: 0.5rem;
 	}
 	
 	.toggled {
 		.nav-menu {
-			margin-top: 1rem;
+			margin-top: 0;
 		}
 	}
 }
@@ -181,7 +180,7 @@
     .menu-toggle {
         display: block;
         position: fixed;
-        top: 3.250em;
+        top: 0.5rem;
 	}
 	
 	.toggled {
@@ -195,7 +194,7 @@
     .menu-toggle {
         display: block;
         position: fixed;
-        top: 2.5em;
+        top: 0.5rem;
     }
 }
 
@@ -203,6 +202,7 @@
     .top-navigation {
         background: #666666;
         border-bottom: 0.063em solid #ffffff;
+        padding: 0.5rem;
     }
 
     .primary-navigation {
@@ -222,7 +222,7 @@
                 left: unset;
 
                 a {
-                    padding: 0.75em;
+                    padding: 0.5em 1em;
 
                     &:hover,
                     &:focus {
@@ -235,6 +235,10 @@
                     left: -9999em;
                     top: 100%;
 
+                    li:first-child {
+                        margin-top: 0.5rem;
+                    }
+
                     li {
                         margin-bottom: 0.063em;
                         position: relative;
@@ -243,7 +247,9 @@
                         a {
                             background: #333333;
                             color: #ffffff;
-
+                            padding: 0.5em 1em;
+                            margin-bottom: 0.188rem;
+                            
                             &:hover {
                                 background: #444444;
                             }
@@ -253,6 +259,10 @@
                             left: -9999em;
                             position: absolute;
                             top: 0;
+
+                            li:first-child {
+                                margin-top: 0;
+                            }
 
                             li {
                                 a {

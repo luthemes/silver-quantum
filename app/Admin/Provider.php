@@ -11,11 +11,18 @@
 /**
  * Define namespace
  */
-namespace SilverQuantum\ThemeLayouts;
+namespace SilverQuantum\Admin;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
-use SilverQuantum\ThemeLayouts\Component;
+use SilverQuantum\Admin\Component;
 
+/**
+ * Attr provider class.
+ *
+ * @since  5.0.0
+ * @access public
+ */
 class Provider extends ServiceProvider {
+
 	/**
 	 * Binds the implementation of the attributes contract to the container.
 	 *
@@ -24,10 +31,11 @@ class Provider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app->singleton( 'layouts', Component::class );
+		$this->app->singleton( 'admin', Component::class );
+
     }
     
     public function boot() {
-        $this->app->resolve( 'layouts' )->boot();
+        $this->app->resolve( 'admin' )->boot();
     }
 }

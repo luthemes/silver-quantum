@@ -1,11 +1,12 @@
 <?php
 /**
- * Silver Quantum ( header.php )
+ * Default Header
  *
  * @package   Silver Quantum
+ * @author    Benjamin Lu ( benlumia007@gmail.com )
  * @copyright Copyright (C) 2014-2021. Benjamin Lu
- * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 ?>
 <!doctype html>
@@ -20,12 +21,12 @@
 <?php wp_body_open(); ?>
 <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ) ?></a>
 <div id="masthead" class="top-navigation">
-	<?php Benlumia007\Backdrop\View\display( 'menu', [ 'primary' ] ); ?>
+	<?php Benlumia007\Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
 </div>
 <div id="container" class="site-container">
 	<header id="site-header" class="site-header header-image">
 		<div class="site-branding">
-			<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
-			<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
+			<?php Benlumia007\Backdrop\Theme\Site\display_site_title(); ?>
+			<?php Benlumia007\Backdrop\Theme\Site\display_site_description(); ?>
 		</div>
 	</header>

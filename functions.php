@@ -18,43 +18,33 @@
 /**
  * 1.0 - Compatibility Check
  */
-function silver_quantum_compatibility_check() {
-	if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) ) {
-		return sprintf(
-			// translators: 1 =  a version string, 2 = current wp version string.
-			__( 'silver-quantum requires at least WordPress version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
-			'5.0',
-			$GLOBALS['wp_version']
-		);
-	} elseif ( version_compare( PHP_VERSION, '5.6', '<' ) ) {
-		return sprintf(
-			// translators: 1 =  a version string, 2 = current wp version string.
-			__( 'silver-quantum requires at least PHP version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
-			'5.6',
-			PHP_VERSION
-		);
-	}
-	return '';
-}
-
-/**
- * Triggered after switch themes and check if it meets the requirements.
- */
-function silver_quantum_switch_theme() {
-	if ( version_compare( $GLOBALS['wp_version'], '5.0', '<' ) || version_compare( PHP_VERSION, '5.6', '<' ) ) {
+add_action( 'after_switch_theme', function() {
+	if ( version_compare( $GLOBALS['wp_version'], '4.9', '<' ) || version_compare( PHP_VERSION, '5.6', '<' ) ) {
 		switch_theme( get_option( 'theme_switched' ) );
-		add_action( 'admin_notices', 'silver_quantum_upgrade_notice' );
+
+		add_action( 'admin_notices', function() { ?>
+			<div class="error">
+				<p>
+					<?php if ( version_compare( $GLOBALS['wp_version'], '4.9', '<' ) ) {
+						printf( 
+							esc_html__( 'Silver Quantum requires at least WordPress version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
+							'4.9',
+							$GLOBALS['wp_version'],
+						
+						);
+					} elseif ( version_compare( PHP_VERSION, '5.6', '<' ) ) {
+						printf(
+							esc_html__( 'Silver Quantum requires at least PHP version %1$s. You are currently running %2$s. Please upgrade and try again.', 'silver-quantum' ),
+							'5.6',
+							PHP_VERSION,
+						);
+					} ?>
+				</p>
+			</div>	
+		<?php } );
 	}
 	return false;
-}
-add_action( 'after_switch_theme', 'silver_quantum_switch_theme' );
-
-/**
- * Displays an error if it doesn't meet the requirements.
- */
-function silver_quantum_upgrade_notice() {
-	printf( '<div class="error"><p>%s</p></div>', esc_html( silver_quantum_compatibility_check() ) );
-}
+} );
 
 /**
  * 2.0 - Backdrop Core
