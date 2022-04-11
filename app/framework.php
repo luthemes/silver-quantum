@@ -19,15 +19,6 @@
 $silver_quantum = new Benlumia007\Backdrop\Framework();
 
 /**
- * Register default providers
- */
-$silver_quantum->provider( Benlumia007\Backdrop\FontAwesome\Provider::class );
-$silver_quantum->provider( Benlumia007\Backdrop\GoogleFonts\Provider::class );
-$silver_quantum->provider( Benlumia007\Backdrop\Template\Hierarchy\Provider::class );
-$silver_quantum->provider( Benlumia007\Backdrop\Template\Manager\Provider::class );
-$silver_quantum->provider( Benlumia007\Backdrop\Template\View\Provider::class );
-
-/**
  * Register Service Provider with the Framework
  */
 $silver_quantum->provider( SilverQuantum\Admin\Provider::class );
