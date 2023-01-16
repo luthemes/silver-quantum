@@ -12,7 +12,7 @@
  * Define namespace
  */
 namespace SilverQuantum\Admin;
-use Benlumia007\Backdrop\Tools\ServiceProvider;
+use Backdrop\Core\ServiceProvider;
 use SilverQuantum\Admin\Component;
 
 /**
@@ -30,12 +30,12 @@ class Provider extends ServiceProvider {
 	 * @access public
 	 * @return void
 	 */
-	public function register() {
+	public function register(): void {
 		$this->app->singleton( 'admin', Component::class );
 
     }
     
-    public function boot() {
+    public function boot(): void {
         $this->app->resolve( 'admin' )->boot();
     }
 }

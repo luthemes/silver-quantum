@@ -19,9 +19,9 @@
         <header class="entry-header">
             <h2 class="entry-title"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
             <div class="entry-metadata">
-                <?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
-                <?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
-                <?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
+                <?php SilverQuantum\Entry\display_author(); ?>
+                <?php SilverQuantum\Entry\display_date(); ?>
+                <?php SilverQuantum\Entry\display_comments_link(); ?>
             </div>
         </header>
         <div class="entry-excerpt">

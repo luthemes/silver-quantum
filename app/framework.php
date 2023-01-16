@@ -16,7 +16,16 @@
  *
  * This will create an instance of the framework allowing you to initialize the theme.
  */
-$silver_quantum = new Benlumia007\Backdrop\Framework();
+$silver_quantum = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
+
+/**
+ * Register Default Providers
+ */
+$silver_quantum->provider( Backdrop\FontAwesome\Provider::class );
+$silver_quantum->provider( Backdrop\Fonts\Provider::class );
+$silver_quantum->provider( Backdrop\Template\Hierarchy\Provider::class );
+$silver_quantum->provider( Backdrop\Template\Manager\Provider::class );
+$silver_quantum->provider( Backdrop\Template\View\Provider::class );
 
 /**
  * Register Service Provider with the Framework

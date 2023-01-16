@@ -1,7 +1,8 @@
 <?php
 
 namespace SilverQuantum\Menu;
-use Benlumia007\Backdrop\Theme\Menu\Component as MenuContract;
+
+use Backdrop\Theme\Menu\Component as MenuContract;
 
 class Component extends MenuContract {
     public function menus() {

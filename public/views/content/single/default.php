@@ -10,11 +10,11 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Benlumia007\Backdrop\Theme\Entry\display_title(); ?>
+		<?php SilverQuantum\Entry\display_title(); ?>
 		<div class="entry-metadata">
-			<?php Benlumia007\Backdrop\Theme\Entry\display_author(); ?>
-			<?php Benlumia007\Backdrop\Theme\Entry\display_date(); ?>
-			<?php Benlumia007\Backdrop\Theme\Entry\display_comments_link(); ?>
+			<?php SilverQuantum\Entry\display_author(); ?>
+			<?php SilverQuantum\Entry\display_date(); ?>
+			<?php SilverQuantum\Entry\display_comments_link(); ?>
 		</div>
 	</header>
 	<div class="post-thumbnails">
@@ -37,7 +37,7 @@
 			?>
 	</div>
 	<div class="entry-taxonomies">
-		<?php Benlumia007\Backdrop\Theme\Entry\display_categories(); ?>
-		<?php Benlumia007\Backdrop\Theme\Entry\display_tags(); ?>
+		<?php SilverQuantum\Entry\display_categories(); ?>
+		<?php SilverQuantum\Entry\display_tags(); ?>
 	</div>
 </article>

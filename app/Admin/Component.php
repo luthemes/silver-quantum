@@ -9,7 +9,8 @@
  */
 
 namespace SilverQuantum\Admin;
-use Benlumia007\Backdrop\Theme\Admin\Component as AdminContract;
+
+use Backdrop\Theme\Admin\Component as AdminContract;
 
 /**
  * Implements Displayable

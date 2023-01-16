@@ -16,7 +16,7 @@
 				// Translators: 1 = Date, 2 = Site Link.
 				esc_html__( 'Copyright &#169; %1$s. %2$s', 'silver-quantum' ),
 				absint( date_i18n( 'Y' ) ),
-				Benlumia007\Backdrop\Theme\Site\render_site_link()
+				SilverQuantum\Site\render_site_link()
 			);
 			?>
 			<br />
@@ -24,8 +24,8 @@
 			printf(
 				// Translators: 1 = WordPress Link, 2 = Theme Link.
 				esc_html__( 'Powered By %1$s and %2$s', 'silver-quantum' ),
-				Benlumia007\Backdrop\Theme\Site\render_wp_link(),
-				Benlumia007\Backdrop\Theme\Site\render_theme_link()
+				SilverQuantum\Site\render_wp_link(),
+				SilverQuantum\Site\render_theme_link()
 			);
 			?>
 		</div>

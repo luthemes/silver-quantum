@@ -13,18 +13,21 @@
  * Define namespace
  */
 namespace SilverQuantum\Customize\Layouts;
+
 use SilverQuantum\Customize\Layouts\Control\ImageRadio;
 use Benlumia007\Backdrop\Customize\Component as Customize;
+use WP_Customize_Manager;
 
 class Component extends Customize {
-    public function panels( $manager ) {
+
+    public function panels( WP_Customize_Manager $manager ): void {
 		$manager->add_panel( 'theme_options', [
             'title' => esc_html( 'Theme Options', 'silver-quantum' ),
 			'priority' => 5,
         ] );
     }
 
-    public function sections( $manager ) {
+    public function sections( WP_Customize_Manager $manager ): void {
         $manager->add_section( 'global_layout', [
             'title'    => esc_html__( 'Global Layout', 'silver-quantum' ),
 			'panel'    => 'theme_options',
@@ -32,14 +35,14 @@ class Component extends Customize {
         ] );
     }
 
-    public function settings( $manager ) {
+    public function settings( WP_Customize_Manager $manager ): void {
         $manager->add_setting( 'global_layout', [
             'default'           => 'left-sidebar',
             'sanitize_callback' => 'Benlumia007\Backdrop\Customize\Helpers\Sanitize::layouts',
         ] );
     }
 
-    public function controls( $manager ) {
+    public function controls( WP_Customize_Manager $manager ): void {
         $manager->add_control(
 			new ImageRadio(
 				$manager,

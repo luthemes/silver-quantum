@@ -21,12 +21,12 @@
 <?php wp_body_open(); ?>
 <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ) ?></a>
 <div id="masthead" class="top-navigation">
-	<?php Benlumia007\Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
+	<?php Backdrop\Theme\Menu\display( 'menu', [ 'primary' ] ); ?>
 </div>
 <div id="container" class="site-container">
 	<header id="site-header" class="site-header header-image">
 		<div class="site-branding">
-			<?php Benlumia007\Backdrop\Theme\Site\display_site_title(); ?>
-			<?php Benlumia007\Backdrop\Theme\Site\display_site_description(); ?>
+			<?php SilverQuantum\Site\display_site_title(); ?>
+			<?php SilverQuantum\Site\display_site_description(); ?>
 		</div>
 	</header>

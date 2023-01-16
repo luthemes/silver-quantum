@@ -11,7 +11,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php Benlumia007\Backdrop\Theme\Entry\display_title(); ?>
+		<?php SilverQuantum\Entry\display_title(); ?>
 	</header>
 	<div class="post-thumbnails">
 		<?php $size = 'left-sidebar' === get_theme_mod( 'global_layout', 'left-sidebar' ) ? 'medium' : 'large'; ?>
