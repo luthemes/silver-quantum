@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2204189e00cd322c3f2b79be5f7a08e",
+    "content-hash": "1e3460ae10a6c886622ffe4972cc96ef",
     "packages": [
         {
             "name": "benlumia007/backdrop",
@@ -12,17 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "2261878f6d937ccbe466704ccd934597c90d5f3d"
+                "reference": "ad35152da0bda49002101c2e6378ecd48f31b52a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/2261878f6d937ccbe466704ccd934597c90d5f3d",
-                "reference": "2261878f6d937ccbe466704ccd934597c90d5f3d",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/ad35152da0bda49002101c2e6378ecd48f31b52a",
+                "reference": "ad35152da0bda49002101c2e6378ecd48f31b52a",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop-contracts": "^1.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop-contracts": "^1.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -54,7 +54,7 @@
                 "issues": "https://github.com/benlumia007/backdrop/issues",
                 "source": "https://github.com/benlumia007/backdrop/tree/2.0.0"
             },
-            "time": "2023-01-12T19:17:07+00:00"
+            "time": "2023-01-17T03:46:50+00:00"
         },
         {
             "name": "benlumia007/backdrop-contracts",
@@ -109,17 +109,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-customize.git",
-                "reference": "68f2d4b7615534d50b1262188d63952a9f8a9b72"
+                "reference": "dd78cd21db871d4c1a3352f316180cf8299e44be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-customize/zipball/68f2d4b7615534d50b1262188d63952a9f8a9b72",
-                "reference": "68f2d4b7615534d50b1262188d63952a9f8a9b72",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-customize/zipball/dd78cd21db871d4c1a3352f316180cf8299e44be",
+                "reference": "dd78cd21db871d4c1a3352f316180cf8299e44be",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "^2.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop": "^2.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -148,7 +148,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-customize/issues",
                 "source": "https://github.com/benlumia007/backdrop-customize/tree/1.0.0"
             },
-            "time": "2023-01-12T21:02:20+00:00"
+            "time": "2023-01-17T03:57:00+00:00"
         },
         {
             "name": "benlumia007/backdrop-fontawesome",
@@ -156,16 +156,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-fontawesome.git",
-                "reference": "16d6a35e84c32cae48581207e61607fde8407bf6"
+                "reference": "0588b4261054a01cf73fbdb386055e9bd34a7f12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-fontawesome/zipball/16d6a35e84c32cae48581207e61607fde8407bf6",
-                "reference": "16d6a35e84c32cae48581207e61607fde8407bf6",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-fontawesome/zipball/0588b4261054a01cf73fbdb386055e9bd34a7f12",
+                "reference": "0588b4261054a01cf73fbdb386055e9bd34a7f12",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0"
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -194,7 +194,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-fontawesome/issues",
                 "source": "https://github.com/benlumia007/backdrop-fontawesome/tree/1.0.0"
             },
-            "time": "2023-01-12T16:52:00+00:00"
+            "time": "2023-01-17T04:00:03+00:00"
         },
         {
             "name": "benlumia007/backdrop-fonts",
@@ -202,17 +202,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-fonts.git",
-                "reference": "60c66dd533243e06f5010dd379b0bd07147098ca"
+                "reference": "271c093ebd1f5beaeb9a97e75b770f8c61d98d62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-fonts/zipball/60c66dd533243e06f5010dd379b0bd07147098ca",
-                "reference": "60c66dd533243e06f5010dd379b0bd07147098ca",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-fonts/zipball/271c093ebd1f5beaeb9a97e75b770f8c61d98d62",
+                "reference": "271c093ebd1f5beaeb9a97e75b770f8c61d98d62",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "^2.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop": "^2.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -241,7 +241,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-fonts/issues",
                 "source": "https://github.com/benlumia007/backdrop-fonts/tree/1.0.0"
             },
-            "time": "2023-01-12T19:43:10+00:00"
+            "time": "2023-01-17T04:04:57+00:00"
         },
         {
             "name": "benlumia007/backdrop-template-helpers",
@@ -298,18 +298,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-hierarchy.git",
-                "reference": "eafa6ea7d30dcb3576657014d7f08e8be2e7f1ab"
+                "reference": "14c8fe316accdac30e4fd5712c485140332d0c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-hierarchy/zipball/eafa6ea7d30dcb3576657014d7f08e8be2e7f1ab",
-                "reference": "eafa6ea7d30dcb3576657014d7f08e8be2e7f1ab",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-hierarchy/zipball/14c8fe316accdac30e4fd5712c485140332d0c9c",
+                "reference": "14c8fe316accdac30e4fd5712c485140332d0c9c",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "^2.0.0",
-                "benlumia007/backdrop-template-helpers": "^1.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop": "^2.0",
+                "benlumia007/backdrop-template-helpers": "^1.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -338,7 +338,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-hierarchy/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-hierarchy/tree/1.0.0"
             },
-            "time": "2023-01-12T19:04:56+00:00"
+            "time": "2023-01-17T04:10:20+00:00"
         },
         {
             "name": "benlumia007/backdrop-template-manager",
@@ -346,19 +346,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-manager.git",
-                "reference": "28d5ae61078c852cf252ef00330515bdc75ccb26"
+                "reference": "0ace28dd046443be5eff5164e90fe1a5c6e18090"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-manager/zipball/28d5ae61078c852cf252ef00330515bdc75ccb26",
-                "reference": "28d5ae61078c852cf252ef00330515bdc75ccb26",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-manager/zipball/0ace28dd046443be5eff5164e90fe1a5c6e18090",
+                "reference": "0ace28dd046443be5eff5164e90fe1a5c6e18090",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "^2.0.0",
-                "benlumia007/backdrop-template-helpers": "^1.0.0",
-                "benlumia007/backdrop-tools": "^1.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop": "^2.0",
+                "benlumia007/backdrop-template-helpers": "^1.0",
+                "benlumia007/backdrop-tools": "^1.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -387,7 +387,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-manager/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-manager/tree/1.0.0"
             },
-            "time": "2023-01-12T19:03:49+00:00"
+            "time": "2023-01-17T04:12:56+00:00"
         },
         {
             "name": "benlumia007/backdrop-template-view",
@@ -395,19 +395,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-view.git",
-                "reference": "09cb84af9d755d1532b894cd4d5d8c476ae1c1b8"
+                "reference": "a2658a8e76cfa7dd7952caa0f6a30faa50b1ccfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-view/zipball/09cb84af9d755d1532b894cd4d5d8c476ae1c1b8",
-                "reference": "09cb84af9d755d1532b894cd4d5d8c476ae1c1b8",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-view/zipball/a2658a8e76cfa7dd7952caa0f6a30faa50b1ccfc",
+                "reference": "a2658a8e76cfa7dd7952caa0f6a30faa50b1ccfc",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "^2.0.0",
-                "benlumia007/backdrop-template-helpers": "^1.0.0",
-                "benlumia007/backdrop-tools": "^1.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop": "^2.0",
+                "benlumia007/backdrop-template-helpers": "^1.0",
+                "benlumia007/backdrop-tools": "^1.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -436,7 +436,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-view/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-view/tree/1.0.0"
             },
-            "time": "2023-01-12T19:01:54+00:00"
+            "time": "2023-01-17T04:16:16+00:00"
         },
         {
             "name": "benlumia007/backdrop-theme",
@@ -444,17 +444,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-theme.git",
-                "reference": "363e5529969b1549bf0f4aa8412e36e85980a04a"
+                "reference": "9d00119caf9a54122ea56da877e3c5f643f8ff8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-theme/zipball/363e5529969b1549bf0f4aa8412e36e85980a04a",
-                "reference": "363e5529969b1549bf0f4aa8412e36e85980a04a",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-theme/zipball/9d00119caf9a54122ea56da877e3c5f643f8ff8b",
+                "reference": "9d00119caf9a54122ea56da877e3c5f643f8ff8b",
                 "shasum": ""
             },
             "require": {
-                "benlumia007/backdrop": "^2.0.0",
-                "php": ">=8.0"
+                "benlumia007/backdrop": "^2.0",
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -489,7 +489,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-theme/issues",
                 "source": "https://github.com/benlumia007/backdrop-theme/tree/1.0.0"
             },
-            "time": "2023-01-16T16:22:58+00:00"
+            "time": "2023-01-17T04:18:23+00:00"
         },
         {
             "name": "benlumia007/backdrop-tools",
@@ -545,7 +545,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.3.24"
+        "php": ">=8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"

@@ -28,7 +28,7 @@
 		]
     },
     "require": {
-        "php": ">=7.3.24",
+        "php": ">=8.0",
         "benlumia007/backdrop": "^2.0",
         "benlumia007/backdrop-customize": "^1.0",
         "benlumia007/backdrop-fontawesome": "^1.0",
