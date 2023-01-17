@@ -41,6 +41,9 @@ Not Available at this time
 I would recommended to upgrade at this time. Silver Quantum has been modified where is now using a framework to display its content. Starting at 1.0.0 is the major update. Please note that  I have removed the previous Changlog and starting from 1.0.3 because of the new Framework.
 
 == Changelog ==
+Version 4.0.2-4.0.4
+- Making sure that all depedencies are met.
+
 Version: 4.0.1 -
   - New and improved framework
 
