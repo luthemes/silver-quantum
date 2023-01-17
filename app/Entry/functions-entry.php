@@ -2,7 +2,7 @@
 /**
  * Theme - Entry
  *
- * @package   Succotash
+ * @package   Silver Quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright Copyright (C) 2022. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
@@ -239,7 +239,7 @@ function render_categories( array $args = [] ) {
 		'taxonomy' => 'category',
 		'text'     => '%s',
 		'class'    => 'cat-list',
-		'sep'      => _x( ' | ', 'taxonomy terms separator', 'succotash' ),
+		'sep'      => _x( ' | ', 'taxonomy terms separator', 'silver-quantum' ),
 		'before'   => '<div class="cat-link">',
 		'after'    => '</div>'
 	] );
@@ -287,7 +287,7 @@ function render_tags( array $args = [] ) {
 		'taxonomy' => 'post_tag',
 		'text'     => '%s',
 		'class'    => 'tag-list',
-		'sep'      => _x( ' | ', 'taxonomy terms separator', 'succotash' ),
+		'sep'      => _x( ' | ', 'taxonomy terms separator', 'silver-quantum' ),
 		'before'   => '<div class="tag-link">',
 		'after'    => '</div>'
 	] );

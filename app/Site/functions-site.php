@@ -2,7 +2,7 @@
 /**
  * Theme - Site
  *
- * @package   Succotash
+ * @package   silver-quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2014-2022. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
@@ -168,8 +168,8 @@ function render_wp_link( array $args = [] ) {
 	$html = sprintf(
 		'<a class="%1$s" href="%2$s">%3$s</a>',
 		esc_attr( $args['class'] ),
-		esc_url( __( 'https://wordpress.org', 'succotash' ) ),
-		sprintf( $args['text'], esc_html__( 'WordPress', 'succotash' ) )
+		esc_url( __( 'https://wordpress.org', 'silver-quantum' ) ),
+		sprintf( $args['text'], esc_html__( 'WordPress', 'silver-quantum' ) )
 	);
 	return apply_filters( 'silver/quantum/render/wp/link', $html );
 }
@@ -284,8 +284,8 @@ function render_cp_link( array $args = [] ) {
 	$html = sprintf(
 		'<a class="%1$s" href="%2$s">%3$s</a>',
 		esc_attr( $args['class'] ),
-		esc_url( __( 'https://classicpress.net', 'succotash' ) ),
-		sprintf( $args['text'], esc_html__( 'ClassicPress', 'succotash' ) )
+		esc_url( __( 'https://classicpress.net', 'silver-quantum' ) ),
+		sprintf( $args['text'], esc_html__( 'ClassicPress', 'silver-quantum' ) )
 	);
 	return apply_filters( 'silver/quantum/render/cp/link', $html );
 }
