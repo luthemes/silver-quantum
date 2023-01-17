@@ -497,16 +497,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-tools.git",
-                "reference": "6d64d0c4c7d6587291917df79fd1db6d37f34ac1"
+                "reference": "21f0b41ed7c79cfd1faf54657c9dab68d1491e7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-tools/zipball/6d64d0c4c7d6587291917df79fd1db6d37f34ac1",
-                "reference": "6d64d0c4c7d6587291917df79fd1db6d37f34ac1",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-tools/zipball/21f0b41ed7c79cfd1faf54657c9dab68d1491e7e",
+                "reference": "21f0b41ed7c79cfd1faf54657c9dab68d1491e7e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0"
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -535,7 +535,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-tools/issues",
                 "source": "https://github.com/benlumia007/backdrop-tools/tree/1.0.0"
             },
-            "time": "2023-01-12T06:39:24+00:00"
+            "time": "2023-01-17T04:49:34+00:00"
         }
     ],
     "packages-dev": [],
