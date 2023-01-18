@@ -15,12 +15,13 @@
 namespace SilverQuantum\Customize\Layouts;
 
 use SilverQuantum\Customize\Layouts\Control\ImageRadio;
-use Benlumia007\Backdrop\Customize\Component as Customize;
+use Backdrop\Theme\Customize\Component as Customize;
 use WP_Customize_Manager;
 
 class Component extends Customize {
 
     public function panels( WP_Customize_Manager $manager ): void {
+		
 		$manager->add_panel( 'theme_options', [
             'title' => esc_html( 'Theme Options', 'silver-quantum' ),
 			'priority' => 5,
@@ -37,8 +38,8 @@ class Component extends Customize {
 
     public function settings( WP_Customize_Manager $manager ): void {
         $manager->add_setting( 'global_layout', [
-            'default'           => 'left-sidebar',
-            'sanitize_callback' => 'Benlumia007\Backdrop\Customize\Helpers\Sanitize::layouts',
+            'default'           => 'left-sidebar', 
+            'sanitize_callback' => 'Backdrop\Theme\Customize\Helpers\Sanitize::layouts',
         ] );
     }
 

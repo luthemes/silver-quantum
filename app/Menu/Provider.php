@@ -12,7 +12,7 @@
  * Define namespace
  */
 namespace SilverQuantum\Menu;
-use Backdrop\Core\ServiceProvider;
+use Backdrop\Tools\ServiceProvider;
 use SilverQuantum\Menu\Component;
 
 /**

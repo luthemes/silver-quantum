@@ -27,3 +27,5 @@
         </div>
     </section>
 <?php $engine->display( 'footer' ); ?>
+
+<php phpinfo();

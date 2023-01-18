@@ -21,8 +21,8 @@ $silver_quantum = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Applica
 /**
  * Register Default Providers
  */
-$silver_quantum->provider( Backdrop\FontAwesome\Provider::class );
-$silver_quantum->provider( Backdrop\Fonts\Provider::class );
+$silver_quantum->provider( Backdrop\Assets\FontAwesome\Provider::class );
+$silver_quantum->provider( Backdrop\Assets\Fonts\Provider::class );
 $silver_quantum->provider( Backdrop\Template\Hierarchy\Provider::class );
 $silver_quantum->provider( Backdrop\Template\Manager\Provider::class );
 $silver_quantum->provider( Backdrop\Template\View\Provider::class );

@@ -12,6 +12,7 @@
  * Define namespace
  */
 namespace SilverQuantum\Customize\Layouts\Control;
+
 use WP_Customize_Control;
 
 /**

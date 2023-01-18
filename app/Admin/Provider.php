@@ -12,8 +12,8 @@
  * Define namespace
  */
 namespace SilverQuantum\Admin;
-use Backdrop\Core\ServiceProvider;
-use SilverQuantum\Admin\Component;
+
+use Backdrop\Tools\ServiceProvider;
 
 /**
  * Attr provider class.

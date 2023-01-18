@@ -12,7 +12,7 @@
  * Define namespace
  */
 namespace SilverQuantum\Sidebar;
-use Backdrop\Core\ServiceProvider;
+use Backdrop\Tools\ServiceProvider;
 use SilverQuantum\Sidebar\Component;
 
 /**

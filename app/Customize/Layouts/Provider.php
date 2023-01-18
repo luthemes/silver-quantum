@@ -13,8 +13,8 @@
  * Define namespace
  */
 namespace SilverQuantum\Customize\Layouts;
-use Backdrop\Core\ServiceProvider;
-use SilverQuantum\Customize\Layouts\Component;
+
+use Backdrop\Tools\ServiceProvider;
 
 class Provider extends ServiceProvider {
 	/**

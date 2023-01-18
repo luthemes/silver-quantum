@@ -11,5 +11,9 @@
 // Access the view template engine.
 $engine = Backdrop\App::resolve( 'view/engine' );
 
+var_dump( $engine );
+
 // Load the index template.
 $engine->display( 'index' );
+
+phpinfo();
