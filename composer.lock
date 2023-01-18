@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "536f89405e42b1e4dd4a6d766db075f0",
+    "content-hash": "b676621fe783eacded73cbbf403892fb",
     "packages": [
         {
             "name": "benlumia007/backdrop",
@@ -12,16 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "c61254acaa01220f78241325e68d8200eb58a7ba"
+                "reference": "3a9fa731daf8390a797aa4348319aaff5858d34e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/c61254acaa01220f78241325e68d8200eb58a7ba",
-                "reference": "c61254acaa01220f78241325e68d8200eb58a7ba",
+                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/3a9fa731daf8390a797aa4348319aaff5858d34e",
+                "reference": "3a9fa731daf8390a797aa4348319aaff5858d34e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.4"
             },
             "default-branch": true,
             "type": "library",
@@ -59,7 +59,7 @@
                 "issues": "https://github.com/benlumia007/backdrop/issues",
                 "source": "https://github.com/benlumia007/backdrop/tree/v2.0.0"
             },
-            "time": "2023-01-18T01:09:00+00:00"
+            "time": "2023-01-18T06:45:41+00:00"
         }
     ],
     "packages-dev": [],
@@ -71,7 +71,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
