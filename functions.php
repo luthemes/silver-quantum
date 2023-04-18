@@ -1,23 +1,23 @@
 <?php
 /**
- * Silver Quantum ( functions.php )
+ * Default functions template
+ *
+ * This file is used to bootstrap the theme.
  *
  * @package   Silver Quantum
- * @copyright Copyright (C) 2014-2020. Benjamin Lu
- * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Benjamin Lu ( https://benjlu.com )
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2014-2023. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://github.com/benlumia007/silver-quantum
  */
 
-/**
- * Table of Content
- *
- * 1.0 - Compatibility Check
- * 2.0 - Backdrop Core
- */
+# ------------------------------------------------------------------------------
+# Load the composer files
+# ------------------------------------------------------------------------------
+#
+# Load the composer files. Note that autoloading should happen first so that
+# any classes or functions are available that we might need.
 
-/**
- * 2.0 - Backdrop Core
- */
 if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
 	require_once get_parent_theme_file_path( '/vendor/autoload.php' );
 }
