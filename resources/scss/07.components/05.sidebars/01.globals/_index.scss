@@ -1,0 +1,21 @@
+@media screen and ( max-width: 30rem ) {
+	.widget {
+		margin-top: 1.125rem;
+		
+		.widget-title {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+@media screen and ( min-width: 30.063rem ) and ( max-width: 37.5rem ) {
+	.widget {
+		margin-top: 1.125rem;
+
+		.widget-title {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

@@ -1,13 +1,115 @@
-.site-container {
-	background: color( white );
-	margin: 0 auto;
-	max-width: 1170px;
-	
-	.site-content {
-		margin: 1.125rem;
+@media screen and ( max-width: 30rem ) {
+	.site-container {
+		background: color( white );
+		margin: 0 auto;
+		max-width: 1170px;
+
+		.site-header {
+
+		}
+
+		.site-content {
+			margin: 1.125rem;
+			
+			.content-area {
+				
+			}
+			
+			.widget-area {
+				
+			}
+		}
+
+		.site-footer {
+			margin: 1.125rem;
+		}
 	}
-	
-	.site-footer {
-		margin: 1.125rem;
+}
+
+@media screen and ( min-width: 30.063rem ) and ( max-width: 37.5rem ) {
+	.site-container {
+		background: color( white );
+		margin: 0 auto;
+		max-width: 1170px;
+
+		.site-header {
+
+		}
+
+		.site-content {
+			margin: 1.125rem;
+
+			.content-area {
+
+			}
+
+			.widget-area {
+
+			}
+		}
+
+		.site-footer {
+			margin: 1.125rem;
+		}
+	}
+}
+
+@media screen and ( min-width: 37.563rem ) and ( max-width: 48rem ) {
+	.site-container {
+		background: color( white );
+		margin: 0 auto;
+		max-width: 1170px;
+
+		.site-header {
+
+		}
+
+		.site-content {
+			margin: 1.125rem;
+
+			.content-area {
+
+			}
+
+			.widget-area {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 1.125rem;
+			}
+		}
+
+		.site-footer {
+			margin: 1.125rem;
+		}
+	}
+}
+
+@media screen and ( min-width: 48.063rem ) and ( max-width: 64rem ) {
+	.site-container {
+		background: color( white );
+		margin: 0 auto;
+		max-width: 1170px;
+
+		.site-header {
+
+		}
+
+		.site-content {
+			margin: 1.125rem;
+
+			.content-area {
+
+			}
+
+			.widget-area {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 1.125rem;
+			}
+		}
+
+		.site-footer {
+			margin: 1.125rem;
+		}
 	}
 }

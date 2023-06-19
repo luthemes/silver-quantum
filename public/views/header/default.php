@@ -19,9 +19,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="masthead" class="top-navigation">
-	<?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary' ] ); ?>
-</div>
+<?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary' ] ); ?>
 <div id="container" class="site-container">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'creativity' ); ?></a>
 	<header id="masthead" class="site-header header-image">
