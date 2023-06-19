@@ -21,19 +21,19 @@ $silver_quantum = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Applica
 /**
  * Register Default Providers
  */
-$silver_quantum->provider( Backdrop\Assets\FontAwesome\Provider::class );
-$silver_quantum->provider( Backdrop\Assets\Fonts\Provider::class );
+$silver_quantum->provider( Backdrop\Fonts\Provider::class );
+$silver_quantum->provider( Backdrop\Mix\Provider::class );
 $silver_quantum->provider( Backdrop\Template\Hierarchy\Provider::class );
 $silver_quantum->provider( Backdrop\Template\Manager\Provider::class );
-$silver_quantum->provider( Backdrop\Template\View\Provider::class );
+$silver_quantum->provider( Backdrop\View\Provider::class );
 
 /**
  * Register Service Provider with the Framework
  */
-$silver_quantum->provider( SilverQuantum\Admin\Provider::class );
-$silver_quantum->provider( SilverQuantum\Customize\Layouts\Provider::class );
-$silver_quantum->provider( SilverQuantum\Menu\Provider::class );
-$silver_quantum->provider( SilverQuantum\Sidebar\Provider::class );
+// $silver_quantum->provider( SilverQuantum\Admin\Provider::class );
+// $silver_quantum->provider( SilverQuantum\Customize\Layouts\Provider::class );
+// $silver_quantum->provider( SilverQuantum\Menu\Provider::class );
+// $silver_quantum->provider( SilverQuantum\Sidebar\Provider::class );
 
 /**
  * Boot the Framework

@@ -1,32 +1,24 @@
 <?php
 /**
- * silver-quantum ( content.php )
+ * Default content/default template
  *
- * @package   Silver Quantum
- * @author    Benjamin Lu ( benlumia007@gmail.com )
- * @copyright Copyright (C) 2014-2021. Benjamin Lu
+ * @package   Creativity
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2023. Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/silver-quantum
+ * @link      https://luthemes.com/portfolio/creativity
  */
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( is_sticky() && is_home() && ! is_paged() ) { ?>
-			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'silver-quantum' ) ); ?>
-		<?php } ?>
-		<?php SilverQuantum\Entry\display_title(); ?>
-		<div class="entry-metadata">
-			<?php SilverQuantum\Entry\display_author(); ?>
-			<?php SilverQuantum\Entry\display_date(); ?>
-			<?php SilverQuantum\Entry\display_comments_link(); ?>
-		</div>
-	</header>
-    <?php if ( has_post_thumbnail() ) { ?>
-        <picture class="post-thumbnail">
-            <?php the_post_thumbnail( 'silver-quantum-medium-thumbnails' ); ?>
-        </picture>
-    <?php } ?>
-	<div class="entry-excerpt">
-		<?php the_excerpt(); ?>
+<section id="content" class="site-content clear">
+	<div id="global-layout" class="<?php echo esc_attr( get_theme_mod( 'global_layout', 'left-sidebar' ) ); ?>">
+		<main id="main" class="content-area">
+			<?php if ( have_posts() ) : ?>
+				<?php while( have_posts() ) : the_post(); ?>
+					<?php Backdrop\View\display( 'entry' ); ?>
+				<?php endwhile; ?>
+				<?php the_posts_pagination(); ?>
+			<?php endif; ?>
+		</main>
+		<?php Backdrop\View\display( 'sidebar', 'primary', [ 'location' => 'primary' ] ); ?>
 	</div>
-</article>
+</section>

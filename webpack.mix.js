@@ -7,11 +7,11 @@
  *
  * @link https://laravel.com/docs/5.6/mix
  *
- * @package   Initiator
+ * @package   Silver Quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2020 Benjamin Lu
- * @link      https://github.com/benlumia007/initiator
+ * @copyright 2014-2023 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @link      https://luthemes/portfolio/silver-quantum
  */
 
  // Import All Required Packages
@@ -71,7 +71,8 @@ mix.version();
  * @link https://laravel.com/docs/5.6/mix#working-with-scripts
  */
 mix.js( `${devPath}/js/app.js`, 'assets/js' )
-   .js( `${devPath}/js/customize/image-radio.js`, 'assets/js' );
+	.js( `${devPath}/js/customize/image-radio.js`, 'assets/js' )
+	.js( `${devPath}/js/navigation.js`, 'assets/js' );
 
 /*
  * Compile CSS. Mix supports Sass, Less, Stylus, and plain CSS, and has functions

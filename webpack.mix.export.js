@@ -1,15 +1,15 @@
 /**
  * Theme Export Script
  *
- * Exports the production-ready theme with only the files and folders needed for
- * uploading to a site or zipping. Edit the `files` or `folders` variables if
- * you need to change something.
+ * This code exports the theme, optimized for production, including only the
+ * necessary files and folders or zipping. If you need to make any modifications,
+ * you can edit the `files` or `folders` variables.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
- * @link      https://themehybrid.com/themes/mythic
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @package   Silver Quantum
+ * @author    Benjamin Lu <benlumia007k@gmail.com>
+ * @copyright 2014-2023. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 // Import required packages.

@@ -1,0 +1,22 @@
+.site-header {
+	padding: 5rem;
+	
+	.site-branding {
+		text-align: center;
+		
+		.site-title {
+			font-size: 2.5rem;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				color: color( white );
+				text-decoration: none;
+			}
+		}
+		
+		.site-description {
+			color: color( white );
+		}
+	}
+}

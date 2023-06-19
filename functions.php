@@ -11,13 +11,12 @@
  * @link      https://github.com/benlumia007/silver-quantum
  */
 
-# ------------------------------------------------------------------------------
-# Load the composer files
-# ------------------------------------------------------------------------------
-#
-# Load the composer files. Note that autoloading should happen first so that
-# any classes or functions are available that we might need.
+/** ------------------------------------------------------------------------------------------
+ * Bootstrap the theme.
+ * -------------------------------------------------------------------------------------------
+ * Load the bootstrap files. Note that autoload should happen first so that any classes or
+ * functions are available that we might need.
+ */
 
-if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
-	require_once get_parent_theme_file_path( '/vendor/autoload.php' );
-}
+require_once get_parent_theme_file_path( 'app/bootstrap-autoload.php' );
+require_once get_parent_theme_file_path( 'app/framework.php' );
