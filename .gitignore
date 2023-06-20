@@ -1,5 +1,6 @@
 .idea
 node_modules
-public/mix-manifest.json
-public/assets
 vendor
+
+composer.lock
+package-lock.json
