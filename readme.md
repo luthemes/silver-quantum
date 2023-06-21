@@ -1,4 +1,4 @@
-# Initiator
+# Silver Quantum
 Initiator is a starter theme for WordPress
 
 The main objective of this starter theme is to help myself and other developer to create a theme without the need to code. The starter theme also uses a framework Backdrop Core to its work for this starter theme.

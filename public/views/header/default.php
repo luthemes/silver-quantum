@@ -21,7 +21,7 @@
 <?php wp_body_open(); ?>
 <?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary' ] ); ?>
 <div id="container" class="site-container">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'creativity' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ); ?></a>
 	<header id="masthead" class="site-header header-image">
 		<div class="site-branding">
 			<?php SilverQuantum\Site\display_site_title(); ?>
