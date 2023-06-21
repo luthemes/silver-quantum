@@ -777,9 +777,34 @@ h6 {
     transition-delay: 0s, 0s, 0.3s;
   }
 }
+.content-area .post .entry-header {
+  text-align: center;
+}
 .content-area .post .entry-header .entry-title {
   margin: 0;
   padding: 0;
+}
+.content-area .post .entry-header .entry-metadata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-area .post .entry-header .entry-metadata .svg-author,
+.content-area .post .entry-header .entry-metadata .svg-date,
+.content-area .post .entry-header .entry-metadata .svg-comment {
+  height: 20px;
+  width: 20px;
+}
+.content-area .post .entry-header .entry-metadata .svg-author {
+  margin-right: 0.2rem;
+}
+.content-area .post .entry-header .entry-metadata .svg-date {
+  margin-left: 0.5rem;
+  margin-right: 0.2rem;
+}
+.content-area .post .entry-header .entry-metadata .svg-comment {
+  margin-left: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 .widget .widget-title {

@@ -19,7 +19,9 @@
 	<header class="entry-header">
 		<?php Backdrop\Theme\Entry\display_title(); ?>
 		<div class="entry-metadata">
-			<?php Backdrop\Theme\Entry\display_date(); ?>
+			<img class="svg-author" src="<?php echo esc_url( get_parent_theme_file_uri( 'public/svg/blog-icons/user.svg' ) ); ?>" /> <?php Backdrop\Theme\Entry\display_author(); ?>
+			<img class="svg-date" src="<?php echo esc_url( get_parent_theme_file_uri( 'public/svg/blog-icons/calendar.svg' ) ); ?>" /> <?php Backdrop\Theme\Entry\display_date(); ?>
+			<img class="svg-comment" src="<?php echo esc_url( get_parent_theme_file_uri( 'public/svg/blog-icons/comment.svg' ) ); ?>" /> <?php Backdrop\Theme\Entry\display_comments_link(); ?>
 		</div>
 	</header>
 	<div class="entry-content">

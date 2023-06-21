@@ -46,7 +46,7 @@ add_action( 'wp_enqueue_scripts', function() {
 		return;
 	}
 	$value      = display_header_text() ? sprintf( 'color: #%s', esc_html( $text_color ) ) : 'display: none;';
-	
+
 	$custom_css = "
 		.site-header .site-branding .site-title a,
 		.site-header .site-branding .site-description {
@@ -57,12 +57,11 @@ add_action( 'wp_enqueue_scripts', function() {
 } );
 
 add_action( 'wp_enqueue_scripts', function() {
-	$custom_image = esc_url( get_theme_mod( 'header_image', get_parent_theme_file_uri( '/public/images/header-image.jpg' ) ) );
-	
-	$custom_css = "      
+	$custom_image = esc_url( get_theme_mod( 'header_image', get_parent_theme_file_uri( 'public/images/header-image.jpg' ) ) );
+
+	$custom_css = "
 		.site-header.header-image {
 			background: url({$custom_image});
-			background-attachment: fixed;
 			background-position: center;
 		}
 	";
