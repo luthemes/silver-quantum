@@ -22,9 +22,12 @@
 <?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary' ] ); ?>
 <div id="container" class="site-container">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ); ?></a>
-	<header id="masthead" class="site-header header-image">
-		<div class="site-branding">
-			<?php SilverQuantum\Site\display_site_title(); ?>
-			<?php SilverQuantum\Site\display_site_description(); ?>
+	<header id="masthead" class="site-header">
+		<div class="custom-image-header">
+			<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+			<div class="site-branding">
+				<?php Backdrop\Theme\Site\display_site_title(); ?>
+				<?php Backdrop\Theme\Site\display_site_description(); ?>
+			</div>
 		</div>
 	</header>

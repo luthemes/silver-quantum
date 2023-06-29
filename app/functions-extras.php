@@ -9,7 +9,7 @@
  * @link      https://luthemes.com/portfolio/creativity
  */
 
-use function Backdrop\Font\enqueue;
+use function Backdrop\Fonts\enqueue;
 
 /**
  * Changes the theme template path to the `public/views` folder.

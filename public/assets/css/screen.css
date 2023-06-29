@@ -71,6 +71,16 @@ h6 {
   margin: 2.33em 0;
 }
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 @media screen and (max-width: 30rem) {
   .site-container {
     background: #ffffff;
@@ -160,23 +170,28 @@ h6 {
     margin: 1.125rem;
   }
 }
-.site-header {
-  padding: 5rem;
+.site-header .custom-image-header {
+  position: relative;
 }
-.site-header .site-branding {
+.site-header .custom-image-header .site-branding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.site-header .site-branding .site-title {
-  font-size: 2.5rem;
+.site-header .custom-image-header .site-branding .site-title {
+  font-size: 2.8rem;
   margin: 0;
   padding: 0;
 }
-.site-header .site-branding .site-title a {
-  color: #ffffff;
+.site-header .custom-image-header .site-branding .site-title a {
+  color: #000000;
   text-decoration: none;
 }
-.site-header .site-branding .site-description {
-  color: #ffffff;
+.site-header .custom-image-header .site-branding .site-description {
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 30rem) {
@@ -682,7 +697,7 @@ h6 {
 }
 @media screen and (min-width: 73.188rem) {
   .top-navigation {
-    background: #666666;
+    background: #767676;
     border-bottom: 0.063rem solid #ffffff;
     padding: 1.125rem;
   }
@@ -704,7 +719,7 @@ h6 {
     width: max-content;
   }
   .top-navigation .primary-menu .menu-items .menu-item:hover {
-    color: #ffffff;
+    color: #000000;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -725,21 +740,21 @@ h6 {
     display: none;
   }
   .top-navigation .primary-menu .menu-items .menu-item.current-menu-item a {
-    color: #ffffff;
+    color: #000000;
     padding: 0.5rem 1rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
   .top-navigation .primary-menu .menu-items .menu-item.current-menu-item .sub-menu .menu-item a {
-    color: #ffffff;
+    color: #000000;
     padding: 0.5rem 1rem;
     text-decoration: none;
     text-decoration-thickness: 0;
     text-underline-offset: 0;
   }
   .top-navigation .primary-menu .menu-items .menu-item a {
-    color: #ffffff;
+    color: #000000;
     padding: 0.5rem 1rem;
     text-decoration: none;
   }
@@ -909,4 +924,9 @@ h6 {
   width: auto;
   z-index: 100000;
   text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }

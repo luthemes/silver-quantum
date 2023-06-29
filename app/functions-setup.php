@@ -138,7 +138,7 @@ add_action( 'after_setup_theme', function() {
 		[
 			'default-text-color' => 'ffffff',
 			'default-image'      => get_parent_theme_file_uri( '/public/images/header-image.jpg' ),
-			'height'             => 1200,
+			'height'             => 400,
 			'max-width'          => 2000,
 			'width'              => 2000,
 			'flex-height'        => false,

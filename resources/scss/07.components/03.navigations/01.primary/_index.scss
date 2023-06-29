@@ -635,7 +635,7 @@
 
 @media  screen and ( min-width: 73.188rem ) {
 	.top-navigation {
-		background: #666666;
+		background: #767676;
 		border-bottom: 0.063rem solid #ffffff;
 		padding: 1.125rem;
 
@@ -659,7 +659,7 @@
 					width: max-content;
 
 					&:hover {
-						color: color( white );
+						color: color( black );
 						text-decoration: underline;
 						text-decoration-thickness: 2px;
 						text-underline-offset: 4px;
@@ -696,7 +696,7 @@
 
 					&.current-menu-item {
 						a {
-							color: color( white );
+							color: color( black );
 							padding: 0.5rem 1rem;
 							text-decoration: underline;
 							text-decoration-thickness: 2px;
@@ -706,7 +706,7 @@
 						.sub-menu {
 							.menu-item {
 								a {
-									color: color( white );
+									color: color( black );
 									padding: 0.5rem 1rem;
 									text-decoration: none;
 									text-decoration-thickness: 0;
@@ -717,7 +717,7 @@
 					}
 
 					a {
-						color: color( white );
+						color: color( black );
 						padding: 0.5rem 1rem;
 						text-decoration: none;
 					}
