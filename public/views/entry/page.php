@@ -18,13 +18,8 @@
 	<?php } ?>
 	<header class="entry-header">
 		<?php Backdrop\Theme\Entry\display_title(); ?>
-		<div class="entry-metadata">
-			<?php Backdrop\Theme\Entry\display_author(); ?>
-			<?php Backdrop\Theme\Entry\display_date( [ 'before' => SilverQuantum\sep() ] ); ?>
-			<?php Backdrop\Theme\Entry\display_comments_link( [ 'before' => SilverQuantum\sep() ] ); ?>
-		</div>
 	</header>
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 	</div>
 </article>

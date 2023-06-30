@@ -1,5 +1,13 @@
 .content-area {
+	line-height: 1.8rem;
+
+	.page,
 	.post {
+		margin-top: 3rem;
+
+		&:first-child {
+			margin-top: 0;
+		}
 
 		.entry-header {
 			text-align: center;
@@ -7,33 +15,21 @@
 			.entry-title {
 				margin: 0;
 				padding: 0;
+
+				a {
+					text-decoration: none;
+				}
 			}
 
 			.entry-metadata {
 				display: flex;
+				margin-top: 0.5rem;
 				justify-content: center;
 				align-items: center;
+			}
 
-				.svg-author,
-				.svg-date,
-				.svg-comment {
-					height: 20px;
-					width: 20px;
-				}
-
-				.svg-author {
-					margin-right: 0.2rem;
-				}
-
-				.svg-date {
-					margin-left: 0.5rem;
-					margin-right: 0.2rem;
-				}
-
-				.svg-comment {
-					margin-left: 0.5rem;
-					margin-right: 0.2rem;
-				}
+			.sep {
+				margin: 0 0.5rem;
 			}
 		}
 	}

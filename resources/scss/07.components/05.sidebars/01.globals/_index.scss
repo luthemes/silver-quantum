@@ -1,13 +1,17 @@
 .widget {
+
 	.widget-title {
 		margin: 0;
 		padding: 0;
 	}
-}
-@media screen and ( max-width: 30rem ) {
 
-}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 
-@media screen and ( min-width: 30.063rem ) and ( max-width: 37.5rem ) {
-
+		li {
+			line-height: 1.8rem;
+		}
+	}
 }

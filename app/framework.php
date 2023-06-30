@@ -25,6 +25,7 @@ $silver_quantum->provider( Backdrop\Fonts\Provider::class );
 $silver_quantum->provider( Backdrop\Mix\Provider::class );
 $silver_quantum->provider( Backdrop\Template\Hierarchy\Provider::class );
 $silver_quantum->provider( Backdrop\Template\Manager\Provider::class );
+$silver_quantum->provider( Backdrop\Theme\Provider::class );
 $silver_quantum->provider( Backdrop\View\Provider::class );
 
 /**

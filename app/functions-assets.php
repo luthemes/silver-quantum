@@ -34,8 +34,8 @@ add_action( 'wp_enqueue_scripts', function() {
 		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'creativity' ) . '</span>',
 	] );
 
-	// Loads ClassicPress' comment-reply script where appropriate.
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// Load WordPress' comment-reply script where appropriate.
+	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 } );

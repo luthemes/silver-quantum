@@ -13,7 +13,6 @@
  */
 
 namespace SilverQuantum;
-use SilverQuantum\Tools\Config;
 
 /**
  * Returns the metadata separator.
