@@ -1,4 +1,4 @@
-<li>
+<li id="comment-<?php comment_ID(); ?>" class="comments">
 
 	<header class="comment__meta pb-4">
 		<?php Backdrop\Theme\Comment\display_parent_link( [
