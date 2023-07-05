@@ -155,14 +155,6 @@
 				float: left;
 				width: 49.20634920634921%;
 
-				&:before {
-					font-family: 'Font Awesome 5 Free';
-					content: "\f007";
-					float: left;
-					margin-left: 0.063em;
-					margin-right: 0.250em;
-				}
-
 				input[type="text"] {
 					border: 0.063em solid #cccccc;
 					box-sizing: border-box;
@@ -178,14 +170,6 @@
 				float: right;
 				width: 49.20634920634921%;
 
-				&:before {
-					font-family: 'Font Awesome 5 Free';
-					content: "\f0e0";
-					float: left;
-					margin-left: 0.063em;
-					margin-right: 0.250em;
-				}
-
 				input[type="email"] {
 					border: 0.063em solid #cccccc;
 					box-sizing: border-box;
@@ -200,14 +184,6 @@
 			.comment-form-url {
 				margin-bottom: 1.3em;
 				width: 100%;
-
-				&:before {
-					font-family: 'Font Awesome 5 Free';
-					content: "\f0ac";
-					float: left;
-					margin-left: 0.063em;
-					margin-right: 0.250em;
-				}
 
 				input[type="url"] {
 					border: 0.063em solid #cccccc;

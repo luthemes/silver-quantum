@@ -889,13 +889,6 @@ a:hover, a:focus {
   float: left;
   width: 49.2063492063%;
 }
-.comments-area .comment-respond .comment-form .comment-form-author:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f007";
-  float: left;
-  margin-left: 0.063em;
-  margin-right: 0.25em;
-}
 .comments-area .comment-respond .comment-form .comment-form-author input[type=text] {
   border: 0.063em solid #cccccc;
   box-sizing: border-box;
@@ -909,13 +902,6 @@ a:hover, a:focus {
   float: right;
   width: 49.2063492063%;
 }
-.comments-area .comment-respond .comment-form .comment-form-email:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0e0";
-  float: left;
-  margin-left: 0.063em;
-  margin-right: 0.25em;
-}
 .comments-area .comment-respond .comment-form .comment-form-email input[type=email] {
   border: 0.063em solid #cccccc;
   box-sizing: border-box;
@@ -928,13 +914,6 @@ a:hover, a:focus {
 .comments-area .comment-respond .comment-form .comment-form-url {
   margin-bottom: 1.3em;
   width: 100%;
-}
-.comments-area .comment-respond .comment-form .comment-form-url:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0ac";
-  float: left;
-  margin-left: 0.063em;
-  margin-right: 0.25em;
 }
 .comments-area .comment-respond .comment-form .comment-form-url input[type=url] {
   border: 0.063em solid #cccccc;
