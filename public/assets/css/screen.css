@@ -737,7 +737,7 @@ a:hover, a:focus {
 }
 .content-area .page,
 .content-area .post {
-  margin-top: 3rem;
+  margin-top: 1.125rem;
 }
 .content-area .page:first-child,
 .content-area .post:first-child {
@@ -745,6 +745,7 @@ a:hover, a:focus {
 }
 .content-area .page .entry-header,
 .content-area .post .entry-header {
+  margin-bottom: 1rem;
   text-align: center;
 }
 .content-area .page .entry-header .entry-title,
@@ -766,6 +767,27 @@ a:hover, a:focus {
 .content-area .page .entry-header .sep,
 .content-area .post .entry-header .sep {
   margin: 0 0.5rem;
+}
+
+.error-404 .archive-header,
+.archive .archive-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.error-404 .archive-header .archive-title,
+.archive .archive-header .archive-title {
+  margin: 0;
+  padding: 0;
+}
+.error-404 .grid-items,
+.archive .grid-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.error-404 .grid-items .post,
+.archive .grid-items .post {
+  margin-top: 0;
 }
 
 .comments-area {
@@ -1006,6 +1028,11 @@ a:hover, a:focus {
   font-weight: 700;
 }
 
+.site-footer {
+  line-height: 1.8rem;
+  text-align: center;
+}
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
@@ -1028,6 +1055,66 @@ a:hover, a:focus {
   width: auto;
   z-index: 100000;
   text-decoration: none;
+}
+
+.grid-col-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-9 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 1.125rem;
+}
+
+.grid-col-10 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1.125rem;
 }
 
 img {

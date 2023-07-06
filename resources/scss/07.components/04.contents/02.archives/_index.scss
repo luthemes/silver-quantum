@@ -1,0 +1,22 @@
+.error-404,
+.archive {
+	.archive-header {
+		margin-bottom: 2rem;
+		text-align: center;
+
+		.archive-title {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.grid-items {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.post {
+			margin-top: 0;
+		}
+	}
+}
