@@ -1,17 +1,85 @@
-.widget {
+@media screen and ( max-width: 23.438rem ) {
+	.widget-area {
+		line-height: 1.8rem;
 
-	.widget-title {
-		margin: 0;
-		padding: 0;
-	}
+		.widget {
+			margin-bottom: 1.125rem;
 
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
+			.widget-title {
+				margin: 0;
+				padding: 0;
+			}
 
-		li {
-			line-height: 1.8rem;
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+
+
 		}
 	}
 }
+
+@media screen and ( min-width: 23.5rem ) and ( max-width: 30rem ) {
+	.widget-area {
+		line-height: 1.8rem;
+		margin: 1.125rem;
+
+		.widget {
+			margin-bottom: 1.125rem;
+
+			.widget-title {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+
+
+		}
+	}
+}
+
+@media screen and ( min-width: 30.063rem ) and ( max-width: 37.5rem ) {
+
+}
+
+@media screen and ( min-width: 37.563rem ) and ( max-width: 48rem ) {
+	.widget-area {
+		line-height: 1.8rem;
+		margin: 1.125rem;
+
+		.widget {
+			margin-bottom: 1.125rem;
+
+			.widget-title {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: 48.063rem ) and ( max-width: 60rem ) {
+	.widget {
+		line-height: 1.8rem;
+	}
+}
+
+@media screen and ( min-width: 60.063rem ) and ( max-width: 64rem ) {
+	.widget {
+		line-height: 1.8rem;
+	}
+}
+

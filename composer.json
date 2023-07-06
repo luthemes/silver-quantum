@@ -25,7 +25,7 @@
 		"backdrop-dev/template-hierarchy": "^1.0",
 		"backdrop-dev/template-manager": "^1.0",
 		"backdrop-dev/view": "^1.0",
-		"backdrop-dev/theme": "1.0.x-dev"
+		"backdrop-dev/theme": "^1.0"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
