@@ -41,17 +41,19 @@
 @media screen and ( min-width: 23.5rem ) and ( max-width: 30rem ) {
 	.content-area {
 		line-height: 1.8rem;
-		margin: 1.125rem;
 
 		.post {
-			margin-bottom: 1.125rem;
-			padding: 1.125rem;
+			margin-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			.entry-header {
 				text-align: center;
 
 				.entry-title {
-					font-size: 2.5rem;
+					font-size: 2rem;
 					margin: 0;
 					padding: 0;
 
@@ -62,6 +64,7 @@
 
 				.entry-metadata {
 					display: flex;
+					font-size: 0.813rem;
 					margin-top: 0.5rem;
 					justify-content: center;
 					align-items: center;
@@ -78,17 +81,19 @@
 @media screen and ( min-width: 30.063rem ) and ( max-width: 37.5rem ) {
 	.content-area {
 		line-height: 1.8rem;
-		margin: 1.125rem;
 
 		.post {
-			margin-bottom: 1.125rem;
-			padding: 1.125rem;
+			margin-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			.entry-header {
 				text-align: center;
 
 				.entry-title {
-					font-size: 2.5rem;
+					font-size: 2rem;
 					margin: 0;
 					padding: 0;
 
@@ -99,6 +104,7 @@
 
 				.entry-metadata {
 					display: flex;
+					font-size: 0.813rem;
 					margin-top: 0.5rem;
 					justify-content: center;
 					align-items: center;
@@ -115,17 +121,19 @@
 @media screen and ( min-width: 37.563rem ) and ( max-width: 48rem ) {
 	.content-area {
 		line-height: 1.8rem;
-		margin: 1.125rem;
 
 		.post {
-			margin-bottom: 1.125rem;
-			padding: 1.125rem;
+			margin-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			.entry-header {
 				text-align: center;
 
 				.entry-title {
-					font-size: 2.5rem;
+					font-size: 2rem;
 					margin: 0;
 					padding: 0;
 
@@ -136,6 +144,7 @@
 
 				.entry-metadata {
 					display: flex;
+					font-size: 0.813rem;
 					margin-top: 0.5rem;
 					justify-content: center;
 					align-items: center;

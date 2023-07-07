@@ -93,15 +93,24 @@ a:hover, a:focus {
   .site-container {
     background: #ffffff;
   }
+  .site-content {
+    padding: 1.125rem;
+  }
 }
 @media screen and (min-width: 30.063rem) and (max-width: 37.5rem) {
   .site-container {
     background: #ffffff;
   }
+  .site-content {
+    padding: 1.125rem;
+  }
 }
 @media screen and (min-width: 37.563rem) and (max-width: 48rem) {
   .site-container {
     background: #ffffff;
+  }
+  .site-content {
+    padding: 1.125rem;
   }
 }
 @media screen and (min-width: 48.063rem) and (max-width: 60rem) {
@@ -1029,17 +1038,18 @@ a:hover, a:focus {
 @media screen and (min-width: 23.5rem) and (max-width: 30rem) {
   .content-area {
     line-height: 1.8rem;
-    margin: 1.125rem;
   }
   .content-area .post {
-    margin-bottom: 1.125rem;
-    padding: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .content-area .post:last-child {
+    margin-bottom: 0;
   }
   .content-area .post .entry-header {
     text-align: center;
   }
   .content-area .post .entry-header .entry-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
   }
@@ -1048,6 +1058,7 @@ a:hover, a:focus {
   }
   .content-area .post .entry-header .entry-metadata {
     display: flex;
+    font-size: 0.813rem;
     margin-top: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -1059,17 +1070,18 @@ a:hover, a:focus {
 @media screen and (min-width: 30.063rem) and (max-width: 37.5rem) {
   .content-area {
     line-height: 1.8rem;
-    margin: 1.125rem;
   }
   .content-area .post {
-    margin-bottom: 1.125rem;
-    padding: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .content-area .post:last-child {
+    margin-bottom: 0;
   }
   .content-area .post .entry-header {
     text-align: center;
   }
   .content-area .post .entry-header .entry-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
   }
@@ -1078,6 +1090,7 @@ a:hover, a:focus {
   }
   .content-area .post .entry-header .entry-metadata {
     display: flex;
+    font-size: 0.813rem;
     margin-top: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -1089,17 +1102,18 @@ a:hover, a:focus {
 @media screen and (min-width: 37.563rem) and (max-width: 48rem) {
   .content-area {
     line-height: 1.8rem;
-    margin: 1.125rem;
   }
   .content-area .post {
-    margin-bottom: 1.125rem;
-    padding: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .content-area .post:last-child {
+    margin-bottom: 0;
   }
   .content-area .post .entry-header {
     text-align: center;
   }
   .content-area .post .entry-header .entry-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
   }
@@ -1108,6 +1122,7 @@ a:hover, a:focus {
   }
   .content-area .post .entry-header .entry-metadata {
     display: flex;
+    font-size: 0.813rem;
     margin-top: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -1382,9 +1397,10 @@ a:hover, a:focus {
 @media screen and (max-width: 23.438rem) {
   .widget-area {
     line-height: 1.8rem;
+    margin-top: 2rem;
   }
   .widget-area .widget {
-    margin-bottom: 1.125rem;
+    margin-bottom: 2rem;
   }
   .widget-area .widget .widget-title {
     margin: 0;
@@ -1399,10 +1415,31 @@ a:hover, a:focus {
 @media screen and (min-width: 23.5rem) and (max-width: 30rem) {
   .widget-area {
     line-height: 1.8rem;
-    margin: 1.125rem;
+    margin-top: 2rem;
   }
   .widget-area .widget {
-    margin-bottom: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .widget-area .widget .widget-title {
+    margin: 0;
+    padding: 0;
+  }
+  .widget-area .widget ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 30.063rem) and (max-width: 37.5rem) {
+  .widget-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.125rem;
+    line-height: 1.8rem;
+    margin-top: 2rem;
+  }
+  .widget-area .widget {
+    margin-bottom: 2rem;
   }
   .widget-area .widget .widget-title {
     margin: 0;
@@ -1416,11 +1453,14 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 37.563rem) and (max-width: 48rem) {
   .widget-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.125rem;
     line-height: 1.8rem;
-    margin: 1.125rem;
+    margin-top: 2rem;
   }
   .widget-area .widget {
-    margin-bottom: 1.125rem;
+    margin-bottom: 2rem;
   }
   .widget-area .widget .widget-title {
     margin: 0;
