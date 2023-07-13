@@ -16,7 +16,7 @@
 			<?php the_post_thumbnail( 'creativity-small' ); ?>
 		</picture>
 	<?php } ?>
-	<header class="entry-header">
+	<header class="entry-header text-center">
 		<?php Backdrop\Theme\Entry\display_title(); ?>
 	</header>
 	<div class="entry-content">

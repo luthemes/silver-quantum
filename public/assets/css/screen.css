@@ -24,11 +24,9 @@ body {
 }
 
 h1 {
-  display: block;
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 2.5rem;
   font-weight: 700;
-  margin: 0.67em 0;
 }
 
 h2 {
@@ -36,7 +34,6 @@ h2 {
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 2rem;
   font-weight: 700;
-  margin: 0.83em 0;
 }
 
 h3 {
@@ -44,7 +41,6 @@ h3 {
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 1em 0;
 }
 
 h4 {
@@ -52,7 +48,6 @@ h4 {
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 1.33em 0;
 }
 
 h5 {
@@ -60,7 +55,6 @@ h5 {
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1.125rem;
   font-weight: 700;
-  margin: 1.67em 0;
 }
 
 h6 {
@@ -68,7 +62,6 @@ h6 {
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1rem;
   font-weight: 700;
-  margin: 2.33em 0;
 }
 
 a {
@@ -891,7 +884,7 @@ a:hover, a:focus {
     width: max-content;
   }
   .top-navigation .primary-menu .menu-items .menu-item:hover {
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -912,11 +905,8 @@ a:hover, a:focus {
     display: none;
   }
   .top-navigation .primary-menu .menu-items .menu-item.current-menu-item a {
-    color: #000000;
+    color: #ffffff;
     padding: 0.5rem 1rem;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
   }
   .top-navigation .primary-menu .menu-items .menu-item.current-menu-item .sub-menu .menu-item a {
     color: #000000;
@@ -969,8 +959,8 @@ a:hover, a:focus {
 }
 .content-area .page .entry-header .entry-title,
 .content-area .post .entry-header .entry-title {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0.563rem;
 }
 
 .error-404 .archive-header,
@@ -1186,7 +1176,6 @@ a:hover, a:focus {
 .content-area .post .entry-header .entry-metadata {
   display: flex;
   font-size: 0.875rem;
-  margin-top: 0.5rem;
   justify-content: center;
   align-items: center;
 }

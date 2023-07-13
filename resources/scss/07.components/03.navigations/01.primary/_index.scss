@@ -676,7 +676,7 @@
 					width: max-content;
 
 					&:hover {
-						color: color( black );
+						color: color( white );
 						text-decoration: underline;
 						text-decoration-thickness: 2px;
 						text-underline-offset: 4px;
@@ -713,11 +713,8 @@
 
 					&.current-menu-item {
 						a {
-							color: color( black );
+							color: color( white );
 							padding: 0.5rem 1rem;
-							text-decoration: underline;
-							text-decoration-thickness: 2px;
-							text-underline-offset: 4px;
 						}
 
 						.sub-menu {
