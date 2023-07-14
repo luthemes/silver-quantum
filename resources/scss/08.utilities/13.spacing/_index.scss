@@ -67,19 +67,4 @@
 	}
 }
 
-@each $prefix, $breakpoint in ( xs: $breakpoint-xs ) {
 
-	@media screen and ( min-width:  $breakpoint-xs ) {
-
-		@each $name, $value in $spacings {
-			.#{ $prefix }\:m-#{$name} {
-				margin: $value;
-			}
-
-			.#{ $prefix }\:mx-#{ $name } {
-				margin-left:  $value;
-				margin-right: $value;
-			}
-		}
-	}
-}
