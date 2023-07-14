@@ -5,13 +5,13 @@
 /// @return {map}  Map of page breaks.
 
 // Mostly used for defining `max-width` and breakpoints.
-$width-xs:   22.5rem; // 360px
-$width-sm:   30rem;   // 480px
-$width-md:   40rem;   // 640px
-$width-lg:   48rem;   // 768px
-$width-xl:   64rem;   // 1024px
-$width-2xl:  80rem;   // 1280px
-$width-3xl:  96rem;   // 1536px
+$width-xs:   23.438rem; // 375px
+$width-sm:   30rem;    // 480px
+$width-md:   40rem;    // 640px
+$width-lg:   48rem;    // 768px
+$width-xl:   64rem;    // 1024px
+$width-1xl:  72rem;    // 1152px
+$width-2xl:  75rem;    // 1200px
 $width-full: 100vw;
 
 $width-base: $width-md; // alias
@@ -19,13 +19,11 @@ $width-base: $width-md; // alias
 // Breakpoints are triggered when the screen size reaches the desired point
 // plus and additional `4rem`, which is the size of the global spacing value
 // (2x for both the left/right sides).
-$breakpoint-xs:  $width-xs  + 4rem; // 22.5rem (360px) + 4rem (padded)
-$breakpoint-sm:  $width-sm  + 4rem; // 30rem   (480px) + 4rem (padded)
-$breakpoint-md:  $width-md  + 4rem; // 40rem   (640px) + 4rem (padded)
-$breakpoint-lg:  $width-lg  + 4rem; // 48rem   (768px) + 4rem (padded)
-$breakpoint-xl:  $width-xl  + 4rem; // 64rem   (1024px) + 4rem (padded)
-$breakpoint-2xl: $width-2xl + 4rem; // 80rem   (1280px) + 4rem (padded)
-$breakpoint-3xl: $width-3xl + 4rem; // 96rem   (1536px) + 4rem (padded)
+$breakpoint-xs:  $width-xs; // 22.5rem (360px)
+$breakpoint-sm:  $width-sm; // 30rem   (480px)
+$breakpoint-md:  $width-md; // 40rem   (640px)
+$breakpoint-lg:  $width-lg; // 48rem   (768px)
+$breakpoint-xl:  $width-xl; // 64rem   (1024px)
 
 $breakpoint-base: $breakpoint-md; // alias
 

@@ -20,7 +20,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <?php Backdrop\View\display( 'menu', 'primary', [ 'location' => 'primary' ] ); ?>
-<div id="container" class="site-container">
+<div id="container" class="site-container bg-white mx-18">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'silver-quantum' ); ?></a>
 	<header id="masthead" class="site-header">
 		<div class="custom-image-header">
