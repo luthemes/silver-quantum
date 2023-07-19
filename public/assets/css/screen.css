@@ -74,6 +74,42 @@ a:hover, a:focus {
   text-underline-offset: 4px;
 }
 
+@media screen and (min-width: 75rem) {
+  .left-sidebar .content-area {
+    float: right;
+    width: 72.5177304965%;
+  }
+  .left-sidebar .widget-area {
+    float: left;
+    width: 24.2907801418%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .site-header .custom-image-header {
+    position: relative;
+  }
+  .site-header .custom-image-header .site-branding {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .site-header .custom-image-header .site-branding .site-title {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .site-header .custom-image-header .site-branding .site-title a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .site-header .custom-image-header .site-branding .site-description {
+    margin: 0;
+    padding: 0;
+  }
+}
 @media screen and (max-width: 30rem) {
   .menu-toggle {
     background: #000000;
@@ -1210,6 +1246,38 @@ a:hover, a:focus {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 1.125rem;
+}
+
+@media screen and (max-width: 30rem) {
+  .xs\:container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 27.75rem;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  .sm\:container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35.25rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .md\:container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45.75rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .lg\:container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 61.75rem;
+  }
 }
 
 @media screen and (min-width: 72rem) {
