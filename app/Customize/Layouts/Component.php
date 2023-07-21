@@ -14,38 +14,40 @@
  */
 namespace SilverQuantum\Customize\Layouts;
 
-use SilverQuantum\Customize\Layouts\Control\ImageRadio;
-use Backdrop\Theme\Customize\Component as Customize;
+use Backdrop\Customize\Controls\RadioImage;
+use Backdrop\Customize\Component as Customize;
+use function Backdrop\Mix\asset;
 use WP_Customize_Manager;
 
-class Component extends Customize {
+class Component implements Customize {
 
-    public function panels( WP_Customize_Manager $manager ): void {
-		
-		$manager->add_panel( 'theme_options', [
-            'title' => esc_html( 'Theme Options', 'silver-quantum' ),
-			'priority' => 5,
-        ] );
-    }
+	public function boot() {
+		add_action( 'customize_register', [ $this, 'sections' ] );
+		add_action( 'customize_register', [ $this, 'settings' ] );
+		add_action( 'customize_register', [ $this, 'controls' ] );
+		add_action( 'customize_controls_enqueue_scripts', [ $this, 'enqueue' ] );
+	}
 
-    public function sections( WP_Customize_Manager $manager ): void {
+    public function panels( WP_Customize_Manager $manager ) {}
+
+    public function sections( WP_Customize_Manager $manager ) {
         $manager->add_section( 'global_layout', [
             'title'    => esc_html__( 'Global Layout', 'silver-quantum' ),
-			'panel'    => 'theme_options',
+			'panel'    => 'theme_content',
 			'priority' => 5,
         ] );
     }
 
-    public function settings( WP_Customize_Manager $manager ): void {
+    public function settings( WP_Customize_Manager $manager ) {
         $manager->add_setting( 'global_layout', [
-            'default'           => 'left-sidebar', 
-            'sanitize_callback' => 'Backdrop\Theme\Customize\Helpers\Sanitize::layouts',
+            'default'           => 'left-sidebar',
+            'sanitize_callback' => 'Backdrop\Customize\Helpers\Sanitize::layouts',
         ] );
     }
 
-    public function controls( WP_Customize_Manager $manager ): void {
+    public function controls( WP_Customize_Manager $manager ) {
         $manager->add_control(
-			new ImageRadio(
+			new RadioImage(
 				$manager,
 				'global_layout', [
 					'description' => esc_html__( 'General Layout applies to all layouts that supports in this theme.', 'silver-quantum' ),
@@ -61,4 +63,9 @@ class Component extends Customize {
 			)
 		);
     }
+
+	public function enqueue() {
+		wp_enqueue_script( 'silver-quantum-customize-controls', asset( 'assets/js/customize-controls.js' ), [ 'jquery' ], null, true );
+		wp_enqueue_style(  'silver-quantum-customize-controls', asset( 'assets/css/customize-controls.css' ), null, null );
+	}
 }

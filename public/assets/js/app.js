@@ -50,10 +50,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/scss/customize/image-radio.scss":
-/*!***************************************************!*\
-  !*** ./resources/scss/customize/image-radio.scss ***!
-  \***************************************************/
+/***/ "./resources/scss/customize/customize-controls.scss":
+/*!**********************************************************!*\
+  !*** ./resources/scss/customize/customize-controls.scss ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -150,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/assets/js/app": 0,
-/******/ 			"assets/css/image-radio": 0,
+/******/ 			"assets/css/customize-controls": 0,
 /******/ 			"assets/css/admin": 0,
 /******/ 			"assets/css/editor": 0,
 /******/ 			"assets/css/screen": 0
@@ -203,11 +203,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/css/image-radio","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/image-radio","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/screen.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/image-radio","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/editor.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/image-radio","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/admin.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/image-radio","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/customize/image-radio.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/customize-controls","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/customize-controls","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/screen.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/customize-controls","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/editor.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/customize-controls","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/admin.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/customize-controls","assets/css/admin","assets/css/editor","assets/css/screen"], () => (__webpack_require__("./resources/scss/customize/customize-controls.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

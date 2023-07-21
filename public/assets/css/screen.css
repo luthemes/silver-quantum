@@ -74,16 +74,32 @@ a:hover, a:focus {
   text-underline-offset: 4px;
 }
 
+@media screen and (min-width: 72rem) {
+  .left-sidebar .content-area {
+    float: right;
+    width: 70.7407407407%;
+  }
+}
 @media screen and (min-width: 75rem) {
   .left-sidebar .content-area {
     float: right;
     width: 72.5177304965%;
   }
-  .left-sidebar .widget-area {
-    float: left;
-    width: 24.2907801418%;
-  }
 }
+.left-sidebar .widget-area {
+  float: left;
+  width: 24.2907801418%;
+}
+
+.right-sidebar .content-area {
+  float: left;
+  width: 72.5177304965%;
+}
+.right-sidebar .widget-area {
+  float: right;
+  width: 24.2907801418%;
+}
+
 @media screen and (min-width: 75rem) {
   .site-header .custom-image-header {
     position: relative;

@@ -5,17 +5,24 @@
 /// @return {map}  Map of page breaks.
 
 // Mostly used for defining `max-width` and breakpoints.
-$width-xs:   30rem; // 480px
-$width-sm: 37.5rem; // 600px
-$width-md:   48rem; // 768px
-$width-lg:   64rem; // 1024px
-$width-xl:   72rem; // 1152px
-$width-1xl:  75rem; // 1200px
-$width-full: 100vw;
+
+$width-3xs: 23.438rem; // 375px
+$width-2xs: 25.875rem; // 414px
+$width-1xs:  26.75rem; // 428px
+$width-xs:      30rem; // 480px
+$width-sm:    37.5rem; // 600px
+$width-md:      48rem; // 768px
+$width-lg:      64rem; // 1024px
+$width-xl:      72rem; // 1152px
+$width-1xl:     75rem; // 1200px
+$width-full:    100vw;
 
 $width-base: 40rem; // 640px
 
 $breakpoints: (
+  xxxxs: $width-3xs,
+   xxxs: $width-2xs,
+	xxs: $width-1xs,
 	 xs: $width-xs,
 	 sm: $width-sm,
 	 md: $width-md,

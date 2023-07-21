@@ -33,7 +33,7 @@ $silver_quantum->provider( Backdrop\View\Provider::class );
  */
 // $silver_quantum->provider( SilverQuantum\Admin\Provider::class );
 $silver_quantum->provider( SilverQuantum\Customize\Provider::class );
-// $silver_quantum->provider( SilverQuantum\Customize\Layouts\Provider::class );
+$silver_quantum->provider( SilverQuantum\Customize\Layouts\Provider::class );
 // $silver_quantum->provider( SilverQuantum\Menu\Provider::class );
 // $silver_quantum->provider( SilverQuantum\Sidebar\Provider::class );
 

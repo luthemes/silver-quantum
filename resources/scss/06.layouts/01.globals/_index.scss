@@ -1,13 +1,50 @@
-@media screen and ( min-width: 75rem ) {
-	.left-sidebar {
-		.content-area {
-			float: right;
-			width: 72.517730496453901%;
-		}
+.left-sidebar {
+	.content-area {
+		@each $name, $value in $breakpoints {
+			@media screen and ( min-width: $value ) {
+				@if ( xs == $name ) {
 
-		.widget-area {
-			float: left;
-			width: 24.290780141843972%;
+				}
+
+				@if ( sm == $name ) {
+
+				}
+
+				@if ( md == $name ) {
+
+				}
+
+				@if ( lg == $name ) {
+
+				}
+
+				@if ( xl == $name ) {
+					float: right;
+					width: 70.740740740740741%;
+				}
+
+				@if ( xxl == $name ) {
+					float: right;
+					width: 72.517730496453901%;
+				}
+			}
 		}
+	}
+
+	.widget-area {
+		float: left;
+		width: 24.290780141843972%;
+	}
+}
+
+.right-sidebar {
+	.content-area {
+		float: left;
+		width: 72.517730496453901%;
+	}
+
+	.widget-area {
+		float: right;
+		width: 24.290780141843972%;
 	}
 }

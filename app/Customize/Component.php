@@ -54,6 +54,12 @@ class Component implements Customize {
 		///  Theme: Header
 		/// ------------------------------------------------------------------------------------------------------------
 
+		$manager->get_section( 'header_image')->panel = 'theme_header';
+		$manager->get_section( 'header_image' )->priority = 201;
+
+		$manager->get_section( 'title_tagline' )->panel = 'theme_header';
+		$manager->get_section( 'title_tagline' )->title = esc_html__( 'Branding', 'prismatic' );
+
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Content
 		/// ------------------------------------------------------------------------------------------------------------
@@ -103,6 +109,10 @@ class Component implements Customize {
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Header
 		/// ------------------------------------------------------------------------------------------------------------
+
+		$manager->get_control( 'header_textcolor' )->section = 'theme_header';
+		$manager->get_control( 'header_textcolor' )->label = esc_html__( 'Header: Site Title', 'prismatic' );
+		$manager->get_control( 'header_textcolor' )->priority = 10;
 
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Content

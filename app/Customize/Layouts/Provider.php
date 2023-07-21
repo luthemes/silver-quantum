@@ -14,7 +14,7 @@
  */
 namespace SilverQuantum\Customize\Layouts;
 
-use Backdrop\Tools\ServiceProvider;
+use Backdrop\Core\ServiceProvider;
 
 class Provider extends ServiceProvider {
 	/**
@@ -27,7 +27,7 @@ class Provider extends ServiceProvider {
 	public function register(): void {
 		$this->app->singleton( 'layouts', Component::class );
     }
-    
+
     public function boot(): void {
         $this->app->resolve( 'layouts' )->boot();
     }
