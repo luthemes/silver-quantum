@@ -9,7 +9,7 @@
  * @link      https://luthemes.com/portfolio/creativity
  */
 ?>
-<section id="content" class="site-content">
+<section id="content" class="site-content m-18">
 	<main id="main" class="content-area">
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">

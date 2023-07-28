@@ -1,50 +1,23 @@
 @each $name, $value in $breakpoints {
 	.#{$name}\:container {
-		@if $name == xs {
-			@media screen and ( max-width: $value ) {
-				margin-left: auto;
-				margin-right: auto;
-				max-width: 27.75rem
-			}
-		}
-
-		@if $name == sm {
-			@media screen and ( min-width: $value ) {
-				margin-left: auto;
-				margin-right: auto;
-				max-width: 35.25rem
-			}
-		}
-
-		@if $name == md {
-			@media screen and ( min-width: $value ) {
-				margin-left: auto;
-				margin-right: auto;
-				max-width: 45.75rem
-			}
-		}
-
 		@if $name == lg {
-			@media screen and ( min-width: $value ) {
-				margin-left: auto;
-				margin-right: auto;
-				max-width: 61.75rem
+			@media screen and ( min-width: 769px ) and ( max-width: $value ) {
+				margin-left: 1.125rem;
+				margin-right: 1.125rem;
 			}
 		}
 
 		@if $name == xl {
-			@media screen and ( min-width: $value ) {
+			@media screen and ( min-width: 1025px ) and ( max-width: 1200px ) {
 				margin-left: auto;
 				margin-right: auto;
-				max-width: 69.75rem
+				max-width: 72.75rem;
 			}
-		}
 
-		@if $name == xxl {
-			@media screen and ( min-width: $value ) {
+			@media screen and ( min-width: 1200px ) {
 				margin-left: auto;
 				margin-right: auto;
-				max-width: 72.75rem
+				max-width: 72.75rem;
 			}
 		}
 	}

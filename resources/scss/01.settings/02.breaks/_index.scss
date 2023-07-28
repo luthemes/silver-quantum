@@ -6,27 +6,19 @@
 
 // Mostly used for defining `max-width` and breakpoints.
 
-$width-3xs: 23.438rem; // 375px
-$width-2xs: 25.875rem; // 414px
-$width-1xs:  26.75rem; // 428px
 $width-xs:      30rem; // 480px
-$width-sm:    37.5rem; // 600px
+$width-sm:      40rem; // 640px
 $width-md:      48rem; // 768px
 $width-lg:      64rem; // 1024px
-$width-xl:      72rem; // 1152px
-$width-1xl:     75rem; // 1200px
+$width-xl:      75rem; // 1200px
 $width-full:    100vw;
 
-$width-base: 40rem; // 640px
+$width-base: $width-sm;
 
 $breakpoints: (
-  xxxxs: $width-3xs,
-   xxxs: $width-2xs,
-	xxs: $width-1xs,
-	 xs: $width-xs,
-	 sm: $width-sm,
-	 md: $width-md,
-	 lg: $width-lg,
-	 xl: $width-xl,
-	xxl: $width-1xl,
+	 xs: $width-xs, // 480px
+	 sm: $width-sm, // 640px
+	 md: $width-md, // 768px
+	 lg: $width-lg, // 1024px
+	 xl: $width-xl, // 1200px
 );

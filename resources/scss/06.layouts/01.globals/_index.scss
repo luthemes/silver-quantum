@@ -15,25 +15,34 @@
 				}
 
 				@if ( lg == $name ) {
-
+					float: right;
+					width: 69.02834008097166%;
 				}
 
 				@if ( xl == $name ) {
 					float: right;
-					width: 70.740740740740741%;
-				}
-
-				@if ( xxl == $name ) {
-					float: right;
-					width: 72.517730496453901%;
+					width: 72.872340425531915%;
 				}
 			}
 		}
 	}
 
 	.widget-area {
-		float: left;
-		width: 24.290780141843972%;
+		@each $name, $value in $breakpoints {
+			@if $name == lg {
+				@media screen and ( max-width: $value ) {
+					float: left;
+					width: 27.327935222672065%;
+				}
+			}
+
+			@if $name == xl {
+				@media screen and ( min-width: $value ) {
+					float: left;
+					width: 23.936170212765957%;
+				}
+			}
+		}
 	}
 }
 

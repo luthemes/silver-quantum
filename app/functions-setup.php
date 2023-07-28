@@ -138,9 +138,9 @@ add_action( 'after_setup_theme', function() {
 		[
 			'default-text-color' => 'ffffff',
 			'default-image'      => get_parent_theme_file_uri( '/public/images/header-image.jpg' ),
-			'height'             => 400,
-			'max-width'          => 2000,
-			'width'              => 2000,
+			'height'             => 320,
+			'max-width'          => 1164,
+			'width'              => 1164,
 			'flex-height'        => false,
 			'flex-width'         => false,
 		]

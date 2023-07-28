@@ -26,42 +26,31 @@ body {
 h1 {
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 2.5rem;
-  font-weight: 700;
 }
 
 h2 {
-  display: block;
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 2rem;
-  font-weight: 700;
 }
 
 h3 {
-  display: block;
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 h4 {
-  display: block;
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1.25rem;
-  font-weight: 700;
 }
 
 h5 {
-  display: block;
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1.125rem;
-  font-weight: 700;
 }
 
 h6 {
-  display: block;
   font-family: var(--font-family-heading, "Fira Sans", serif);
   font-size: 1rem;
-  font-weight: 700;
 }
 
 a {
@@ -74,21 +63,29 @@ a:hover, a:focus {
   text-underline-offset: 4px;
 }
 
-@media screen and (min-width: 72rem) {
+@media screen and (min-width: 64rem) {
   .left-sidebar .content-area {
     float: right;
-    width: 70.7407407407%;
+    width: 69.028340081%;
   }
 }
 @media screen and (min-width: 75rem) {
   .left-sidebar .content-area {
     float: right;
-    width: 72.5177304965%;
+    width: 72.8723404255%;
   }
 }
-.left-sidebar .widget-area {
-  float: left;
-  width: 24.2907801418%;
+@media screen and (max-width: 64rem) {
+  .left-sidebar .widget-area {
+    float: left;
+    width: 27.3279352227%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .left-sidebar .widget-area {
+    float: left;
+    width: 23.9361702128%;
+  }
 }
 
 .right-sidebar .content-area {
@@ -100,32 +97,30 @@ a:hover, a:focus {
   width: 24.2907801418%;
 }
 
-@media screen and (min-width: 75rem) {
-  .site-header .custom-image-header {
-    position: relative;
-  }
-  .site-header .custom-image-header .site-branding {
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-  .site-header .custom-image-header .site-branding .site-title {
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
-  }
-  .site-header .custom-image-header .site-branding .site-title a {
-    color: #000000;
-    text-decoration: none;
-  }
-  .site-header .custom-image-header .site-branding .site-description {
-    margin: 0;
-    padding: 0;
-  }
+.site-header .custom-image-header {
+  position: relative;
 }
+.site-header .custom-image-header .site-branding {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.site-header .custom-image-header .site-branding .site-title {
+  margin: 0;
+  padding: 0;
+}
+.site-header .custom-image-header .site-branding .site-title a {
+  color: #000000;
+  text-decoration: none;
+}
+.site-header .custom-image-header .site-branding .site-description {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 30rem) {
   .menu-toggle {
     background: #000000;
@@ -1264,48 +1259,22 @@ a:hover, a:focus {
   grid-gap: 1.125rem;
 }
 
-@media screen and (max-width: 30rem) {
-  .xs\:container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 27.75rem;
-  }
-}
-
-@media screen and (min-width: 37.5rem) {
-  .sm\:container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 35.25rem;
-  }
-}
-
-@media screen and (min-width: 48rem) {
-  .md\:container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 45.75rem;
-  }
-}
-
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 769px) and (max-width: 64rem) {
   .lg\:container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 61.75rem;
+    margin-left: 1.125rem;
+    margin-right: 1.125rem;
   }
 }
 
-@media screen and (min-width: 72rem) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
   .xl\:container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 69.75rem;
+    max-width: 72.75rem;
   }
 }
-
-@media screen and (min-width: 75rem) {
-  .xxl\:container {
+@media screen and (min-width: 1200px) {
+  .xl\:container {
     margin-left: auto;
     margin-right: auto;
     max-width: 72.75rem;
