@@ -4,11 +4,11 @@
  *
  * A simple class for grabbing and returning a configuration file from `/config`.
  *
- * @package   Exhale
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2019 Justin Tadlock
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/exhale
+ * @package   Silver Quantum
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2014 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 namespace SilverQuantum\Tools;
