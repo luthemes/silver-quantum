@@ -19,7 +19,7 @@ use Backdrop\Customize\Component as Customize;
 use function Backdrop\Mix\asset;
 use WP_Customize_Manager;
 
-class Component implements Customize {
+class Component extends Customize {
 
 	public function boot() {
 		add_action( 'customize_register', [ $this, 'sections' ] );

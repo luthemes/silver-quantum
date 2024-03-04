@@ -47,7 +47,7 @@ $theme->provider( Backdrop\View\Provider::class );
 
 $theme->provider( SilverQuantum\Provider::class );
 $theme->provider( SilverQuantum\Customize\Provider::class );
-// $theme->provider( SilverQuantum\Customize\Layouts\Provider::class );
+$theme->provider( SilverQuantum\Customize\Layouts\Provider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.
