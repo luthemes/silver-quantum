@@ -16,6 +16,8 @@
  * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
+use function Backdrop\Theme\is_classicpress;
+
 return [
 
 	# ----------------------------------------------------------------------
@@ -30,7 +32,7 @@ return [
 
 	// Default footer credit text.
 	'theme_footer_custom_credit' => function() {
-		if ( function_exists( 'classicpress_version' ) ) {
+		if ( is_classicpress() ) {
             return sprintf( __( 'Powered by %s.', 'silver-quantum' ), SilverQuantum\Site\render_cp_link() );
         } else {
             return sprintf( __( 'Powered by %s.', 'silver-quantum' ), SilverQuantum\Site\render_wp_link() );
