@@ -35,9 +35,9 @@ class Mod {
 	 * @param  mixed   $default
 	 * @return mixed
 	 */
-	public static function get( $name, $default = '' ) {
+	public function get( $name, $default = '' ) {
 
-		$fallback = static::fallback( $name );
+		$fallback = $this->fallback( $name );
 
 		return mod(
 			$name,
@@ -53,15 +53,13 @@ class Mod {
 	 * @param  string  $name
 	 * @return mixed
 	 */
-	public static function fallback( $name ) {
+	public function fallback( $name ) {
 
-		$mods = App::resolve( 'silver/quantum/mods' );
+		$mods = App::resolve( 'silver/quantum/mods' );;
 
-		if ( isset( $mods[ $name ] ) ) {
+		if ( isset( $mods[ $name ] ) ) { 
 
-			return $mods[ $name ] instanceof Closure
-			       ? $mods[ $name ]->__invoke()
-			       : $mods[ $name ];
+			return $mods[ $name ] instanceof Closure ? $mods[ $name ]->__invoke() : $mods[ $name ];
 		}
 
 		return null;
