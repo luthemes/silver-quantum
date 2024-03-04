@@ -13,42 +13,18 @@
 
 namespace SilverQuantum\Customize;
 use Backdrop\Customize\Component as Customize;
+use SilverQuantum\Tools\Mod;
 use WP_Customize_Manager;
 
-class Component implements Customize {
+use SilverQuantum\Template\Footer;
 
-	public function boot() {
-		add_action( 'customize_register', [ $this, 'panels' ] );
-		add_action( 'customize_register', [ $this, 'sections' ] );
-		add_action( 'customize_register', [ $this, 'settings' ] );
-		add_action( 'customize_register', [ $this, 'controls' ] );
-	}
-
-	public function panels( WP_Customize_Manager $manager ) {
-
-		$panels = [
-			'theme_global'  => esc_html__( 'Theme: Global', 'silver-quantum' ),
-			'theme_header'  => esc_html__( 'Theme: Header', 'silver-quantum' ),
-			'theme_content' => esc_html__( 'Theme: Content', 'silver-quantum' ),
-			'theme_footer'  => esc_html__( 'Theme: Footer', 'silver-quantum' )
-		];
-
-		foreach ( $panels as $panel => $label ) {
-			$manager->add_panel( $panel, [
-				'title'    => $label,
-				'priority' => 100
-			] );
-		}
-	}
+class Component extends Customize {
 
 	public function sections( WP_Customize_Manager $manager ) {
 
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Global
 		/// ------------------------------------------------------------------------------------------------------------
-
-		// Additional CSS
-		$manager->get_section( 'custom_css' )->panel = 'theme_global';
 
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Header
@@ -58,7 +34,7 @@ class Component implements Customize {
 		$manager->get_section( 'header_image' )->priority = 201;
 
 		$manager->get_section( 'title_tagline' )->panel = 'theme_header';
-		$manager->get_section( 'title_tagline' )->title = esc_html__( 'Branding', 'prismatic' );
+		$manager->get_section( 'title_tagline' )->title = esc_html__( 'Branding', 'silver-quantum' );
 
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Content
@@ -93,10 +69,18 @@ class Component implements Customize {
 		///  Theme: Footer
 		/// ------------------------------------------------------------------------------------------------------------
 
-		// Credit
-		$manager->add_setting( 'theme_footer_credit', [
-			'default' => 'Proudly powered by <a href="https://wordpress.org">WordPress</a>',
-			'sanitize_callback' => 'wp_kses_post',
+		// Register footer settings.
+		$manager->add_setting( 'theme_footer_powered_by', [
+			'default'           => ( new Mod() )->fallback( 'theme_footer_powered_by' ),
+			'sanitize_callback' => 'wp_validate_boolean',
+		] );
+
+		$manager->add_setting( 'theme_footer_custom_credit', [
+			// Translators: %s is the theme link.
+			'default'           => ( new Mod() )->fallback( 'theme_footer_custom_credit' ),
+			'sanitize_callback' => function( $value ) {
+				return wp_kses( $value, ( new Footer() )->allowedTags() );
+			},
 		] );
 	}
 
@@ -111,7 +95,7 @@ class Component implements Customize {
 		/// ------------------------------------------------------------------------------------------------------------
 
 		$manager->get_control( 'header_textcolor' )->section = 'theme_header';
-		$manager->get_control( 'header_textcolor' )->label = esc_html__( 'Header: Site Title', 'prismatic' );
+		$manager->get_control( 'header_textcolor' )->label = esc_html__( 'Header: Site Title', 'silver-quantum' );
 		$manager->get_control( 'header_textcolor' )->priority = 10;
 
 		/// ------------------------------------------------------------------------------------------------------------
@@ -122,11 +106,21 @@ class Component implements Customize {
 		///  Theme: Footer
 		/// ------------------------------------------------------------------------------------------------------------
 
+		// Powered by control.
+		$manager->add_control( 'theme_footer_powered_by', [
+			'section'  => 'theme_footer_credit',
+			'type'     => 'checkbox',
+			'label'    => __( 'Show random "powered by" credit text.', 'silver-quantum' )
+		] );
 
-		$manager->add_control( 'theme_footer_credit', [
-			'label' => esc_html__( 'Credit', 'silver-quantum' ),
-			'type' => 'textarea',
-			'section' => 'theme_footer_credit'
+		// Footer credit control.
+		$manager->add_control( 'theme_footer_custom_credit', [
+			'section'         => 'theme_footer_credit',
+			'type'            => 'textarea',
+			'label'           => __( 'Custom Footer Text', 'silver-quantum' ),
+			'active_callback' => function( $control ) {
+				return ! $control->manager->get_setting( 'theme_footer_powered_by' )->value();
+			}
 		] );
 	}
 }
