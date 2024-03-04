@@ -1,7 +1,5 @@
 # Silver Quantum
-Initiator is a starter theme for WordPress
-
-The main objective of this starter theme is to help myself and other developer to create a theme without the need to code. The starter theme also uses a framework Backdrop Core to its work for this starter theme.
+This theme is a parent theme. What this means is that to customize it, you should create a child theme. All you need to know is that it's a solid, yet flexible, starting point for any blog.
 
 ## Requirements
 There are few things that we will need to begin.
