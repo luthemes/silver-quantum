@@ -2,11 +2,11 @@
 /**
  * Default extras template
  *
- * @package   Creativity
+ * @package   Silver Quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2023. Benjamin Lu
+ * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes.com/portfolio/creativity
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 use function Backdrop\Fonts\enqueue;
@@ -23,6 +23,14 @@ add_filter( 'backdrop/template/path', function() {
 	return 'public/views';
 } );
 
+/**
+ * Registers custom templates with WordPress.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  object  $templates
+ * @return void
+ */
 add_action( 'backdrop/templates/register', function( $templates ) {
 	$templates->add(
 		'template-custom-sidebar.php', [
@@ -46,8 +54,15 @@ add_action( 'backdrop/templates/register', function( $templates ) {
 	);
 } );
 
-// Example usage
-add_action( 'wp_enqueue_scripts', function() {
+/**
+ * Registers custom fonts.
+ *
+ * @since  1.0.0
+ * @access public
+ * @param  object  $file
+ * @return void
+ */
+add_action( 'wp_enqueue_scripts', function( $file ) {
 
 	array_map( function( $file ) {
 		enqueue( $file );
