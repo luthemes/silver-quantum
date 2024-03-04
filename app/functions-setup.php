@@ -4,7 +4,7 @@
  *
  * @package   Silver Quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2014-2023. Benjamin Lu
+ * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://luthemes.com/portfolio/silver-quantum
  */
@@ -13,6 +13,8 @@
  * Define namespace
  */
 namespace SilverQuantum;
+
+use function Backdrop\Theme\is_classicpress;
 
 /**
  * Setup Theme Support.
@@ -35,14 +37,16 @@ add_action( 'after_setup_theme', function() {
 	// Automatically add feed links to `<head>`.
 	add_theme_support( 'automatic-feed-links' );
 
-	// Outputs HTML5 markup for core features.
-	add_theme_support( 'html5', [
-		'caption',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'search-form'
-	] );
+	if ( ! is_classicpress() ) {
+		// Outputs HTML5 markup for core features.
+		add_theme_support( 'html5', [
+			'caption',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'search-form'
+		] );
+	}
 
 	// Adds featured image support.
 	add_theme_support( 'post-thumbnails' );
@@ -82,8 +86,8 @@ add_action( 'after_setup_theme', function() {
 add_action( 'init', function() {
 
 	register_nav_menus( [
-		'primary'	=> esc_html__( 'Primary Navigation', 'creativity' ),
-		'social' => esc_html__( 'Social Navigation', 'creativity' )
+		'primary'	=> esc_html__( 'Primary Navigation', 'silver-quantum' ),
+		'social' => esc_html__( 'Social Navigation', 'silver-quantum' )
 	] );
 
 }, 5 );
@@ -109,19 +113,19 @@ add_action( 'widgets_init', function() {
 	$sidebars = [
 		[
 			'id' => 'primary',
-			'name' => esc_html__( 'Primary', 'creativity' )
+			'name' => esc_html__( 'Primary', 'silver-quantum' )
 		],
 		[
 			'id' => 'secondary',
-			'name' => esc_html__( 'Secondary', 'creativity' )
+			'name' => esc_html__( 'Secondary', 'silver-quantum' )
 		],
 		[
 			'id' => 'portfolio',
-			'name' => esc_html__( 'Portfolio', 'creativity' )
+			'name' => esc_html__( 'Portfolio', 'silver-quantum' )
 		],
 		[
 			'id' => 'custom',
-			'name' => esc_html__( 'Custom', 'creativity' )
+			'name' => esc_html__( 'Custom', 'silver-quantum' )
 		],
 	];
 
