@@ -35,6 +35,7 @@ class Component extends Customize {
 
 		$manager->get_section( 'title_tagline' )->panel = 'theme_header';
 		$manager->get_section( 'title_tagline' )->title = esc_html__( 'Branding', 'silver-quantum' );
+		$manager->get_section( 'static_front_page' )->panel = 'theme_global';
 
 		/// ------------------------------------------------------------------------------------------------------------
 		///  Theme: Content
