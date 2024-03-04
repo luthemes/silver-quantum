@@ -31,9 +31,9 @@ class Config {
 	 * @param  string  $name
 	 * @return array
 	 */
-	public static function get( string $name ) {
+	public function get( string $name ) {
 
-		$file = static::path( "{$name}.php" );
+		$file = $this->path( "{$name}.php" );
 
 		return ( array ) apply_filters( "silver/quantum/config/{$name}/", file_exists( $file ) ? include( $file ) : [] );
 	}
@@ -46,7 +46,7 @@ class Config {
 	 * @param  string  $file
 	 * @return string
 	 */
-	public static function path( string $file = '' ) {
+	public function path( string $file = '' ) {
 
 		$file = trim( $file, '/' );
 
