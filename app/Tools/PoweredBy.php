@@ -6,7 +6,7 @@
  * theme footer.
  *
  * @package   Silver Quantum
- * @author    Benjamin Lu <benlumia007@gmail.com
+ * @author    Benjamin Lu <benlumia007@gmail.com>
  * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://luthemes.com/portfolio/silver-quantum
@@ -29,20 +29,35 @@ class PoweredBy {
 	 * @access public
 	 * @return array
 	 */
-	public static function all() {
+	public function all() {
 
-		return apply_filters( 'silver/quantum/poweredby/collection', [
-			__( 'Powered by heart and soul.', 'silver-quantum' ),
-			__( 'Powered by crazy ideas and passion.', 'silver-quantum' ),
-			__( 'Powered by the thing that holds all things together in the universe.', 'silver-quantum' ),
-			__( 'Powered by love.', 'silver-quantum' ),
-			__( 'Powered by the vast and endless void.', 'silver-quantum' ),
-			__( 'Powered by the code of a maniac.', 'silver-quantum' ),
-			__( 'Powered by peace and understanding.', 'silver-quantum' ),
-			__( 'Powered by coffee.', 'silver-quantum' ),
-			__( 'Powered by sleepness nights.', 'silver-quantum' ),
-			__( 'Powered by the love of all things.', 'silver-quantum' ),
-			__( 'Powered by something greater than myself.', 'silver-quantum' )
+		return apply_filters( 'silver-quantum/poweredby/collection', [
+			esc_html__( 'Powered by heart and soul.', 'silver-quantum' ),
+			esc_html__( 'Powered by crazy ideas and passion.', 'silver-quantum' ),
+			esc_html__( 'Powered by the thing that holds all things together in the universe.', 'silver-quantum' ),
+			esc_html__( 'Powered by love.', 'silver-quantum' ),
+			esc_html__( 'Powered by the vast and endless void.', 'silver-quantum' ),
+			esc_html__( 'Powered by the code of a maniac.', 'silver-quantum' ),
+			esc_html__( 'Powered by peace and understanding.', 'silver-quantum' ),
+			esc_html__( 'Powered by coffee.', 'silver-quantum' ),
+			esc_html__( 'Powered by sleepness nights.', 'silver-quantum' ),
+			esc_html__( 'Powered by the love of all things.', 'silver-quantum' ),
+			esc_html__( 'Powered by something greater than myself.', 'silver-quantum' ),
+			esc_html__( 'Powered by whispers from the future.', 'silver-quantum' ),
+			esc_html__( 'Powered by the fusion of technology and dreams.', 'silver-quantum' ),
+			esc_html__( 'Powered by the strength found in kindness.', 'silver-quantum' ),
+			esc_html__( 'Powered by the melodies of the unseen world.', 'silver-quantum' ),
+			esc_html__( 'Powered by the courage of the unheard voices.', 'silver-quantum' ),
+			esc_html__( 'Powered by the beauty of the human spirit.', 'silver-quantum' ),
+			esc_html__( 'Powered by the quest for eternal wisdom.', 'silver-quantum' ),
+			esc_html__( 'Powered by the energy of uncharted galaxies.', 'silver-quantum' ),
+			esc_html__( 'Powered by the magic hidden in plain sight.', 'silver-quantum' ),
+			esc_html__( 'Powered by the legacy of the ancients.', 'silver-quantum' ),
+			esc_html__( 'Powered by the dance between light and darkness.', 'silver-quantum' ),
+			esc_html__( 'Powered by the touch of the morning sun.', 'silver-quantum' ),
+			esc_html__( 'Powered by the secrets of the deep ocean.', 'silver-quantum' ),
+			esc_html__( 'Powered by the echoes of laughter and joy.', 'silver-quantum' ),
+			esc_html__( 'Powered by the relentless pursuit of truth.', 'silver-quantum' ),
 		] );
 	}
 
@@ -53,9 +68,8 @@ class PoweredBy {
 	 * @access public
 	 * @return void
 	 */
-	public static function display() {
-		
-		echo esc_html( static::render() );
+	public function display() {
+		echo esc_html( $this->render() );
 	}
 
 	/**
@@ -65,9 +79,8 @@ class PoweredBy {
 	 * @access public
 	 * @return string
 	 */
-	public static function render() {
-
-		$collection = static::all();
+	public function render() {
+		$collection = $this->all();
 
 		return $collection[ array_rand( $collection, 1 ) ];
 	}
