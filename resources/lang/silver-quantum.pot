@@ -1,0 +1,383 @@
+# <!=Copyright (C) 2024 Benjamin Lu
+# This file is distributed under the GNU General Public License v2.0 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Silver Quantum 4.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/silver-quantum\n"
+"POT-Creation-Date: 2024-03-04 19:39:20+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.7\n"
+
+#: app/Customize/Component.php:37
+#: vendor/backdrop-dev/customize/src/Component.php:66
+msgid "Branding"
+msgstr ""
+
+#: app/Customize/Component.php:49
+msgid "Credit"
+msgstr ""
+
+#: app/Customize/Component.php:98
+#. Translators: %s is the theme link.
+msgid "Header: Site Title"
+msgstr ""
+
+#: app/Customize/Component.php:113
+msgid "Show random \"powered by\" credit text."
+msgstr ""
+
+#: app/Customize/Component.php:120
+msgid "Custom Footer Text"
+msgstr ""
+
+#: app/Customize/Layouts/Component.php:35
+msgid "Global Layout"
+msgstr ""
+
+#: app/Customize/Layouts/Component.php:53
+msgid "General Layout applies to all layouts that supports in this theme."
+msgstr ""
+
+#: app/Site/functions-site.php:171
+msgid "https://wordpress.org"
+msgstr ""
+
+#: app/Site/functions-site.php:172
+msgid "WordPress"
+msgstr ""
+
+#: app/Site/functions-site.php:287
+msgid "https://classicpress.net"
+msgstr ""
+
+#: app/Site/functions-site.php:288
+msgid "ClassicPress"
+msgstr ""
+
+#: app/Tools/PoweredBy.php:35
+msgid "Powered by heart and soul."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:36
+msgid "Powered by crazy ideas and passion."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:37
+msgid "Powered by the thing that holds all things together in the universe."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:38
+msgid "Powered by love."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:39
+msgid "Powered by the vast and endless void."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:40
+msgid "Powered by the code of a maniac."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:41
+msgid "Powered by peace and understanding."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:42
+msgid "Powered by coffee."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:43
+msgid "Powered by sleepness nights."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:44
+msgid "Powered by the love of all things."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:45
+msgid "Powered by something greater than myself."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:46
+msgid "Powered by whispers from the future."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:47
+msgid "Powered by the fusion of technology and dreams."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:48
+msgid "Powered by the strength found in kindness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:49
+msgid "Powered by the melodies of the unseen world."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:50
+msgid "Powered by the courage of the unheard voices."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:51
+msgid "Powered by the beauty of the human spirit."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:52
+msgid "Powered by the quest for eternal wisdom."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:53
+msgid "Powered by the energy of uncharted galaxies."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:54
+msgid "Powered by the magic hidden in plain sight."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:55
+msgid "Powered by the legacy of the ancients."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:56
+msgid "Powered by the dance between light and darkness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:57
+msgid "Powered by the touch of the morning sun."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:58
+msgid "Powered by the secrets of the deep ocean."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:59
+msgid "Powered by the echoes of laughter and joy."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:60
+msgid "Powered by the relentless pursuit of truth."
+msgstr ""
+
+#: app/functions-assets.php:34
+msgid "expand child menu"
+msgstr ""
+
+#: app/functions-assets.php:35
+msgid "collapse child menu"
+msgstr ""
+
+#: app/functions-extras.php:37
+msgid "Custom Sidebar"
+msgstr ""
+
+#: app/functions-extras.php:44
+msgid "Left Sidebar"
+msgstr ""
+
+#: app/functions-extras.php:51
+msgid "Right Sidebar"
+msgstr ""
+
+#: app/functions-setup.php:89
+msgid "Primary Navigation"
+msgstr ""
+
+#: app/functions-setup.php:90
+msgid "Social Navigation"
+msgstr ""
+
+#: app/functions-setup.php:116
+msgid "Primary"
+msgstr ""
+
+#: app/functions-setup.php:120
+msgid "Secondary"
+msgstr ""
+
+#: app/functions-setup.php:124
+msgid "Portfolio"
+msgstr ""
+
+#: app/functions-setup.php:128
+msgid "Custom"
+msgstr ""
+
+#: app/functions-setup.php:157
+msgid "Header Image"
+msgstr ""
+
+#: config/_settings-mods.php:36 config/_settings-mods.php:38
+msgid "Powered by %s."
+msgstr ""
+
+#: public/views/comment/default.php:6
+#. Translators: %s is the parent comment link.
+msgid "In reply to %s"
+msgstr ""
+
+#: public/views/comment/default.php:29 public/views/comment/ping.php:13
+#. Translators: Comment date + time format.
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: public/views/comment/default.php:44 public/views/comment/ping.php:27
+#: vendor/backdrop-dev/theme/src/Comments/Component.php:47
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: public/views/comments/default.php:34
+msgid "Older Comments"
+msgstr ""
+
+#: public/views/comments/default.php:35
+msgid "Newer Comments"
+msgstr ""
+
+#: public/views/content/404.php:10
+msgid ""
+"It looks like you stumbled upon a page that does not exist. Perhaps rolling "
+"the dice with a search might help."
+msgstr ""
+
+#: public/views/header/default.php:13
+msgid "Skip to content"
+msgstr ""
+
+#: public/views/menu/primary.php:5
+msgid "Menu"
+msgstr ""
+
+#: vendor/backdrop-dev/customize/src/Component.php:39
+msgid "Theme: Global"
+msgstr ""
+
+#: vendor/backdrop-dev/customize/src/Component.php:40
+msgid "Theme: Header"
+msgstr ""
+
+#: vendor/backdrop-dev/customize/src/Component.php:41
+msgid "Theme: Content"
+msgstr ""
+
+#: vendor/backdrop-dev/customize/src/Component.php:42
+msgid "Theme: Footer"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Comment/functions-comment.php:271
+msgid "Edit"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Comments/Component.php:30
+#. translators: 1: date, 2: time
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:126
+msgid "Archives"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:142
+#. Translators: %s is the search query.
+msgid "Search results for: %s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:155
+msgid "404 Not Found"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:223
+#. Translators: 1 is the week number and 2 is the year.
+msgid "Week %1$s of %2$s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:261
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/functions-filters.php:398
+#. Translators: Used as a placeholder for untitled posts on non-singular views.
+msgid "(Untitled)"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Silver Quantum"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Silver Quantum has been converted into a responsive theme that looks great "
+"on smartphones and tablets. This theme offers several features such as "
+"custom header, left and right sidebars, featured images and more. The "
+"Mobile Menu is slightly different from other themes. The mobile menu has "
+"been created at the bottom left corner that helps users to navigation "
+"easier."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Benjamin Lu"
+msgstr ""
+
+#: app/Entry/functions-entry.php:242 app/Entry/functions-entry.php:290
+msgctxt "taxonomy terms separator"
+msgid " | "
+msgstr ""
+
+#: app/functions-template.php:31
+msgctxt "meta separator"
+msgid "&middot;"
+msgstr ""
+
+#: public/views/comments/default.php:14
+msgctxt "comments title"
+msgid "One Comment"
+msgstr ""
+
+#: public/views/comments/default.php:17
+#. Translators: 1 = counts.
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:188
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:210
+#: vendor/backdrop-dev/theme/src/Util/Title.php:225
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:224
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:237
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:248
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:262
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: vendor/backdrop-dev/theme/src/Util/Title.php:274
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
