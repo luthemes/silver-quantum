@@ -9,7 +9,7 @@
 			'after'  => '<br /></div>',
 			'before' => sprintf(
 				'<div class="comment__parent text-sm">%s',
-				SilverQuantum\Tools\Svg::render( 'caret-right-solid' )
+				( new SilverQuantum\Tools\Svg )->render( 'caret-right-solid' )
 			)
 		] ) ?>
 
