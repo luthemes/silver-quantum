@@ -72,6 +72,14 @@ add_action( 'after_setup_theme', function() {
 	 * Load theme translation.
 	 */
 	load_theme_textdomain( 'silver-quantum', get_parent_theme_file_path( '/languages ' ) );
+
+	// Add custom logo support.
+	add_theme_support( 'custom-logo', [
+		'width'       => 1164,
+		'height'      => 320,
+		'flex-width'  => true,
+		'flex-height' => true,
+	] );
 } );
 
 /**
