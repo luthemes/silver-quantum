@@ -245,7 +245,12 @@
 		border-bottom: 0.063rem solid #ffffff;
 		padding: 1.125rem;
 
+		.split {
+			display: none;
+		}
+
 		.primary-menu {
+			display: none;
 
 			.menu-toggle {
 				display: none;
