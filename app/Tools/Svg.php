@@ -4,11 +4,11 @@
  *
  * A simple class for returning or outputting an SVG file.
  *
- * @package   Exhale
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2019 Justin Tadlock
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/exhale
+ * @package   Silver Quantum
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2014 Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 namespace SilverQuantum\Tools;
@@ -29,9 +29,9 @@ class Svg {
 	 * @param  string  $name
 	 * @return string
 	 */
-	public static function render( $name ) {
+	public function render( $name ) {
 
-		$svg = file_get_contents( static::path( "{$name}.svg" ) );
+		$svg = file_get_contents( $this->path( "{$name}.svg" ) );
 
 		return apply_filters( "exhale/svg/social-icons/{$name}", $svg ?: '' );
 	}
@@ -44,8 +44,9 @@ class Svg {
 	 * @param  string  $name
 	 * @return void
 	 */
-	public static function display( $name ) {
-		echo static::render( $name );
+	public function display( $name ) {
+		
+		echo $this->render( $name );
 	}
 
 	/**
@@ -55,7 +56,7 @@ class Svg {
 	 * @access public
 	 * @return string
 	 */
-	public static function path( $file = '' ) {
+	public function path( $file = '' ) {
 
 		$file = trim( $file, '/' );
 
