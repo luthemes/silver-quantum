@@ -1,9 +1,8 @@
 <?php
-
 if ( has_nav_menu( $data->location ) ) { ?>
 	<div id="masthead" class="top-navigation">
 		<nav id="primary" class="primary-menu">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'creativity' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'silver-quantum' ); ?></button>
 			<?php
 			wp_nav_menu( [
 				'theme_location' => $data->location,

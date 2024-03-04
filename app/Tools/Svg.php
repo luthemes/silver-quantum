@@ -46,7 +46,7 @@ class Svg {
 	 */
 	public function display( $name ) {
 		
-		echo $this->render( $name );
+		echo $this->render( $name ); // phpcs:ignore
 	}
 
 	/**

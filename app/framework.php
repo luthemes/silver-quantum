@@ -7,7 +7,7 @@
  *
  * @package   Silver Quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2014-2024 Benjamin Lu
+ * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://luthemes.com/portfolio/silver-quantum
  */
@@ -30,6 +30,7 @@ $theme = Backdrop\booted() ? Backdrop\app() : new Backdrop\Core\Application();
 # for running the theme. Service providers are essentially the backbone of the
 # bootstrapping process.
 
+$theme->provider( Backdrop\Customize\Provider::class );
 $theme->provider( Backdrop\Fonts\Provider::class );
 $theme->provider( Backdrop\Mix\Provider::class );
 $theme->provider( Backdrop\Template\Hierarchy\Provider::class );
@@ -44,7 +45,8 @@ $theme->provider( Backdrop\View\Provider::class );
 # Before booting the application, add any additional service providers that are 
 # necessary for running the theme.
 
-// $theme->provider( SilverQuantum\Customize\Provider::class );
+$theme->provider( SilverQuantum\Provider::class );
+$theme->provider( SilverQuantum\Customize\Provider::class );
 // $theme->provider( SilverQuantum\Customize\Layouts\Provider::class );
 
 # ------------------------------------------------------------------------------

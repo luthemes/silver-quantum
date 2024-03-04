@@ -3,7 +3,7 @@
 	<header class="comment__meta pb-4">
 		<?php Backdrop\Theme\Comment\display_parent_link( [
 			// Translators: %s is the parent comment link.
-			'text'   => __( 'In reply to %s', 'exhale' ),
+			'text'   => __( 'In reply to %s', 'silver-quantum' ),
 			'depth'  => 3,
 			'class'  => 'comment__parent-link inline-block mb-2',
 			'after'  => '<br /></div>',
@@ -26,7 +26,7 @@
 			'text' => Backdrop\Theme\Comment\render_date( [
 				'format' => sprintf(
 				// Translators: Comment date + time format.
-					esc_html__( '%1$s, %2$s', 'exhale' ),
+					esc_html__( '%1$s, %2$s', 'silver-quantum' ),
 					get_option( 'date_format' ),
 					get_option( 'time_format' )
 				)
@@ -41,7 +41,7 @@
 		<?php if ( ! Backdrop\Theme\Comment\is_approved() ) : ?>
 
 			<p class="comment__moderation">
-				<?php esc_html_e( 'Your comment is awaiting moderation.', 'exhale' ) ?>
+				<?php esc_html_e( 'Your comment is awaiting moderation.', 'silver-quantum' ) ?>
 			</p>
 
 		<?php endif ?>
