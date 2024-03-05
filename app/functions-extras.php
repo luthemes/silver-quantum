@@ -33,6 +33,12 @@ add_filter( 'backdrop/template/path', function() {
  */
 add_action( 'backdrop/templates/register', function( $templates ) {
 	$templates->add(
+		'template-home.php', [
+			'label' => esc_html__( 'Home', 'silver-quantum' ),
+			'post_types' => [ 'page' ]
+		]
+	);
+	$templates->add(
 		'template-left-sidebar.php', [
 			'label' => esc_html__( 'Left Sidebar', 'silver-quantum' ),
 			'post_types' => [ 'page' ]
