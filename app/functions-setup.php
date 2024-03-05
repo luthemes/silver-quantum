@@ -128,10 +128,6 @@ add_action( 'widgets_init', function() {
 			'name' => esc_html__( 'Secondary', 'silver-quantum' )
 		],
 		[
-			'id' => 'portfolio',
-			'name' => esc_html__( 'Portfolio', 'silver-quantum' )
-		],
-		[
 			'id' => 'custom',
 			'name' => esc_html__( 'Custom', 'silver-quantum' )
 		],
