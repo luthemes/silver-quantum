@@ -71,7 +71,7 @@ add_action( 'after_setup_theme', function() {
 	/**
 	 * Load theme translation.
 	 */
-	load_theme_textdomain( 'silver-quantum', get_parent_theme_file_path( '/languages ' ) );
+	load_theme_textdomain( 'silver-quantum', get_parent_theme_file_path( 'public/lang ' ) );
 
 	// Add custom logo support.
 	add_theme_support( 'custom-logo', [
