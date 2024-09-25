@@ -7,7 +7,7 @@
  *
  * @package   Silver Quantum
  * @author    Benjamin Lu ( benlumia007@gmail.com )
- * @copyright 2014-2023. Benjamin Lu
+ * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://luthemes.com/portfolio/silver-quantum
  */
@@ -24,13 +24,10 @@ namespace SilverQuantum;
  */
 function sep( string $sep = '' ): string {
 
-	return apply_filters(
-		'silver/quantum/sep',
-		sprintf(
-			' <span class="sep">%s</span> ',
-			$sep ?: esc_html_x( '&middot;', 'meta separator', 'silver-quantum' )
-		)
-	);
+	return apply_filters( 'silver/quantum/sep', sprintf(
+		' <span class="sep">%s</span> ',
+		$sep ?: esc_html_x( '&middot;', 'meta separator', 'silver-quantum' )
+	) );
 }
 
 
