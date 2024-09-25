@@ -6,11 +6,11 @@
  * They allow you to add bindings to the container on registration and boot them
  * once everything has been registered.
  *
- * @package   Exhale
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2019 Justin Tadlock
- * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/exhale
+ * @package   Silver Quantum
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2014. Benjamin Lu
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://luthemes.com/portfolio/silver-quantum
  */
 
 namespace SilverQuantum;
@@ -34,7 +34,7 @@ class Provider extends ServiceProvider {
 	 * @access public
 	 * @return void
 	 */
-	public function register() {
+	public function register(): void {
 
 		// Bind a single instance of theme mod defaults.
 		$this->app->singleton( 'silver/quantum/mods', function() {
