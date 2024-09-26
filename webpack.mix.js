@@ -9,7 +9,7 @@
  *
  * @package   Silver Quantum
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2014-2023 Benjamin Lu
+ * @copyright 2014 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
  * @link      https://luthemes/portfolio/silver-quantum
  */
