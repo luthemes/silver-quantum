@@ -34,9 +34,9 @@ if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
 array_map( function( $file ) {
 	require_once( get_parent_theme_file_path( "app/{$file}.php" ) );
 }, [
-	'Site/functions-site',
 	'functions-assets',
 	'functions-extras',
+	'functions-filters',
 	'functions-setup',
 	'functions-template'
 ] );
